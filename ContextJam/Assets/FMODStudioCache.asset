@@ -17,14 +17,13 @@ MonoBehaviour:
   - {fileID: 114604917862627792}
   EditorEvents:
   - {fileID: 114057937759331432}
-  - {fileID: 114344723093499302}
   MasterBanks:
   - {fileID: 114495064229734830}
   - {fileID: 114604917862627792}
   StringsBanks:
   - {fileID: 114409654931699884}
   - {fileID: 114596081126039968}
-  stringsBankWriteTime: 636850654940000000
+  stringsBankWriteTime: 636850639220000000
   cacheVersion: 3
 --- !u!114 &114057937759331432
 MonoBehaviour:
@@ -213,6 +212,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 714
   Exists: 1
+--- !u!114 &114672081738935902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\fmodbuilds\Desktop\Master Bank.strings.bank
+  lastModified: 636850639941867585
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 714
+  Exists: 1
 --- !u!114 &114689341908118918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +286,26 @@ MonoBehaviour:
   Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
     Bank.bank
   lastModified: 636850615090000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 39840
+  Exists: 1
+--- !u!114 &114766092581934542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\ddebr\Desktop\GameJamContext\ContextJam\Assets\fmodbuilds\Desktop\Master
+    Bank.bank
+  lastModified: 636850639941837657
   LoadResult: 0
   FileSizes:
   - Name: Desktop
