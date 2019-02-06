@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="Workspace" id="{6db48216-c572-4dad-b466-17354e52c591}">
+        <property name="builtBanksOutputDirectory">
+            <value>../ContextJam/Assets/fmodbuilds</value>
+        </property>
         <relationship name="masterEventFolder">
             <destination>{dc4cbd9d-4a62-41ef-91fa-0896cf3d266e}</destination>
         </relationship>
