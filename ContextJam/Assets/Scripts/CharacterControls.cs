@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
@@ -12,6 +13,8 @@ public class CharacterControls : MonoBehaviour {
     public bool canJump = true;
     public float jumpHeight = 1.0f;
     public Inventory inventory;
+    public GameObject _inventory;
+    public GameObject[] inventorySlots = new GameObject[4];
 
     private bool grounded = false;
     private float sprintSpeed;
@@ -58,6 +61,19 @@ public class CharacterControls : MonoBehaviour {
     }
     void Update()
     {
+        if (Input.GetKeyDown("e"))
+        {
+            if (!_inventory.activeInHierarchy)
+            {
+                Debug.Log("Open");
+                _inventory.SetActive(true);
+            }
+            else if (_inventory.activeInHierarchy)
+            {
+                Debug.Log("Close");
+                _inventory.SetActive(false);
+            }
+        }
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
     }
