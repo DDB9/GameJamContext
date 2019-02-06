@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bucket : MonoBehaviour, IInventoryItem
 {
-    public string name
+    public string Name
     {
         get
         {
@@ -13,7 +13,7 @@ public class Bucket : MonoBehaviour, IInventoryItem
     }
 
     public Sprite _Image = null;
-    public Sprite image
+    public Sprite Image
     {
         get
         {

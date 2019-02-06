@@ -5,25 +5,26 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public Inventory inventory;
+    public Inventory Inventory;
 
     // Start is called before the first frame update
     void Start()
     {
-        inventory.ItemAdded += InventoryScript_ItemAdded;
+        Inventory.ItemAdded += InventoryScript_ItemAdded;
     }
 
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {
-        Transform inventoryPanel = transform.Find("InventoryPanel");
+        Transform inventoryPanel = this.transform;
         foreach(Transform slot in inventoryPanel)
         {
-            Image image = slot.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>();
+            Image image = slot.GetChild(0).GetChild(0).GetComponent<Image>();
+            Debug.Log(image.name);
 
             if (!image.enabled)
             {
                 image.enabled = true;
-                image.sprite = e.Item.image;
+                image.sprite = e.Item.Image;
 
                 break;
             }
