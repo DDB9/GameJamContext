@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{486aa0e2-89fb-4a8d-aa57-2027616f5a1e}">
+        <property name="name">
+            <value>orch long2</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{55cfcff7-b2b8-42da-8a58-c20e2174f0a1}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{55cfcff7-b2b8-42da-8a58-c20e2174f0a1}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
