@@ -17,13 +17,14 @@ MonoBehaviour:
   - {fileID: 114604917862627792}
   EditorEvents:
   - {fileID: 114057937759331432}
+  - {fileID: 114344723093499302}
   MasterBanks:
   - {fileID: 114495064229734830}
   - {fileID: 114604917862627792}
   StringsBanks:
   - {fileID: 114409654931699884}
   - {fileID: 114596081126039968}
-  stringsBankWriteTime: 636850639220000000
+  stringsBankWriteTime: 636850654940000000
   cacheVersion: 3
 --- !u!114 &114057937759331432
 MonoBehaviour:
@@ -71,6 +72,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2730
+--- !u!114 &114344723093499302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Forest
+  guid: afcd80322d25234caf175ed8db0f4147
+  Banks:
+  - {fileID: 114604917862627792}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 51280
 --- !u!114 &114349986004562456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,11 +167,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets/fmodbuilds/Desktop/Master Bank.strings.bank
-  lastModified: 636850639220000000
+  lastModified: 636850654940000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 714
+    Value: 762
   Exists: 1
 --- !u!114 &114604917862627792
 MonoBehaviour:
@@ -163,11 +187,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/Master
     Bank.bank
-  lastModified: 636850639220000000
+  lastModified: 636850654940000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 39840
+    Value: 706528
   Exists: 1
 --- !u!114 &114640157941579986
 MonoBehaviour:
