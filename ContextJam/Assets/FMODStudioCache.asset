@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114409654931699884}
-  - {fileID: 114495064229734830}
+  - {fileID: 114596081126039968}
+  - {fileID: 114604917862627792}
   EditorEvents:
   - {fileID: 114057937759331432}
   MasterBanks:
   - {fileID: 114495064229734830}
+  - {fileID: 114604917862627792}
   StringsBanks:
   - {fileID: 114409654931699884}
-  stringsBankWriteTime: 636850630300000000
+  - {fileID: 114596081126039968}
+  stringsBankWriteTime: 636850639220000000
   cacheVersion: 3
 --- !u!114 &114057937759331432
 MonoBehaviour:
@@ -38,7 +40,7 @@ MonoBehaviour:
   Path: event:/cow
   guid: af120ca1b62c7847a9fb199091bb0f74
   Banks:
-  - {fileID: 114495064229734830}
+  - {fileID: 114604917862627792}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -107,7 +109,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 714
-  Exists: 1
+  Exists: 0
 --- !u!114 &114495064229734830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +125,45 @@ MonoBehaviour:
   Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
     Bank.bank
   lastModified: 636850630300000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 39840
+  Exists: 0
+--- !u!114 &114596081126039968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets/fmodbuilds/Desktop/Master Bank.strings.bank
+  lastModified: 636850639220000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 714
+  Exists: 1
+--- !u!114 &114604917862627792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/Master
+    Bank.bank
+  lastModified: 636850639220000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
