@@ -720,7 +720,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_Name
-      value: emmer
+      value: Bucket
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_IsActive
