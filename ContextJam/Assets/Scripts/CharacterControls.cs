@@ -14,7 +14,9 @@ public class CharacterControls : MonoBehaviour {
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
-    public GameObject[] inventorySlots = new GameObject[4];
+    public int currentSelected = 0;
+
+    public UnityEngine.UI.Button[] inventorySlots = new UnityEngine.UI.Button[4];
 
     private bool grounded = false;
     private float sprintSpeed;
@@ -22,6 +24,8 @@ public class CharacterControls : MonoBehaviour {
 
     void Awake()
     {
+        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play.
+
         sprintSpeed = speed * 1.50f;
         GetComponent<Rigidbody>().freezeRotation = true;
         GetComponent<Rigidbody>().useGravity = false;
@@ -59,6 +63,7 @@ public class CharacterControls : MonoBehaviour {
 
         grounded = false;
     }
+
     void Update()
     {
         if (Input.GetKeyDown("e"))
@@ -74,9 +79,32 @@ public class CharacterControls : MonoBehaviour {
                 _inventory.SetActive(false);
             }
         }
+
+        // Inventory Selection
+        if (_inventory.activeInHierarchy)
+        {
+            float d = Input.GetAxis("Mouse ScrollWheel");
+            if (d > 0f)
+            {
+                if (currentSelected <= inventorySlots.Length) currentSelected++;
+                if (currentSelected >= inventorySlots.Length) currentSelected = 0;
+            }
+            if (d < 0f)
+            {
+                if (currentSelected <= inventorySlots.Length) currentSelected--;
+                if (currentSelected <= -inventorySlots.Length) currentSelected = 3;
+            }
+
+            if (currentSelected == 0) inventorySlots[0].Select();
+            if (currentSelected == 1) inventorySlots[1].Select();
+            if (currentSelected == 2) inventorySlots[2].Select();
+            if (currentSelected == 3) inventorySlots[3].Select();
+        }
+
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
     }
+
     void OnCollisionStay()
     {
         grounded = true;
