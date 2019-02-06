@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 0
   HasPlatforms: 1
-  sourceProjectPath: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Game
-    Jam FMod.fspro
-  SourceProjectPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game
-    Jam FMod/Game Jam FMod.fspro
-  SourceBankPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam
-    FMod/Build
+  sourceProjectPath: ../Game Jam FMod/Game Jam FMod.fspro
+  SourceProjectPathUnformatted: ../Game Jam FMod/Game Jam FMod.fspro
+  SourceBankPathUnformatted: ../Game Jam FMod/Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
