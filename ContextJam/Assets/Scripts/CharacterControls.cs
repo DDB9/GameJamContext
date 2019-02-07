@@ -18,7 +18,7 @@ public class CharacterControls : MonoBehaviour {
     public GameObject farmOverlay;
     public int currentSelected = 0;
 
-    public UnityEngine.UI.Button[] inventorySlots = new UnityEngine.UI.Button[4];
+    public Image[] inventorySlots = new Image[4];
 
     private bool grounded = false;
     private float sprintSpeed;
@@ -97,10 +97,10 @@ public class CharacterControls : MonoBehaviour {
                 if (currentSelected <= -inventorySlots.Length) currentSelected = 3;
             }
 
-            if (currentSelected == 0) inventorySlots[0].Select();
-            if (currentSelected == 1) inventorySlots[1].Select();
-            if (currentSelected == 2) inventorySlots[2].Select();
-            if (currentSelected == 3) inventorySlots[3].Select();
+            if (currentSelected == 0) inventorySlots[0].enabled = false;
+            if (currentSelected == 1) inventorySlots[1].enabled = false;
+            if (currentSelected == 2) inventorySlots[2].enabled = false;
+            if (currentSelected == 3) inventorySlots[3].enabled = false;
         }
 
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
