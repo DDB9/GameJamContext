@@ -5,12 +5,20 @@ using UnityEngine.UI;
 
 public class InvSlot : MonoBehaviour
 {
+    public GameObject HUD;
     public Vector3 mousePos; //To store mouse position
 
     public Transform itemImg; //The UI element I'm instantiating
     public Transform parentObj; //The UI Canvas
 
-    public void Select() //Called OnClick()
+    Transform clone;
+
+    private void Update()
+    {
+
+    }
+
+    public void Select()
     {
         itemImg = this.transform.GetChild(0).GetChild(0);
         mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y); //Gets mouse position

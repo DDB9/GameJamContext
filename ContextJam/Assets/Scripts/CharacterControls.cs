@@ -98,9 +98,13 @@ public class CharacterControls : MonoBehaviour {
             }
 
             if (currentSelected == 0) inventorySlots[0].enabled = false;
+            else inventorySlots[0].enabled = true;
             if (currentSelected == 1) inventorySlots[1].enabled = false;
+            else inventorySlots[1].enabled = true;
             if (currentSelected == 2) inventorySlots[2].enabled = false;
+            else inventorySlots[2].enabled = true;
             if (currentSelected == 3) inventorySlots[3].enabled = false;
+            else inventorySlots[3].enabled = true;
         }
 
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
