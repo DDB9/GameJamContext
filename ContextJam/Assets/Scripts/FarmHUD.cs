@@ -2,39 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FarmHUD : MonoBehaviour
-{
-    public Collider2D localCollider;
+public class FarmHUD : MonoBehaviour {
 
-    public GameObject HUD;
-    public Vector3 mousePos; //To store mouse position
-
-    public Transform itemImg; //The UI element I'm instantiating
-    public Transform parentObj; //The UI Canvas
-
-    Transform clone;
-
-    private void Update()
+    private void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
+        Vector2 mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        
+        // Cast a ray straight up.
+        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.up);
+
+        // If it hits something...
+        if (hit.collider != null)
         {
-            RaycastHit hit = new RaycastHit();
-
-
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics2D.Raycast(ray.origin, ray.direction))
+            if (Input.GetMouseButtonDown(0))
             {
-                itemImg = this.transform.GetChild(0).GetChild(0);
-                mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y); //Gets mouse position
-                var NewIncrementElement = Instantiate(itemImg,
-                                                  transform.position,
-                                                  Quaternion.identity)
-                                                  as RectTransform; //instantiates the UI element
-                NewIncrementElement.anchoredPosition = (mousePos); //moves element to mouse position. 
-
-                NewIncrementElement.SetParent(parentObj); //sets the element to be a child            }
+                Debug.Log("test");
             }
         }
+
     }
 }

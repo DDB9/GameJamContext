@@ -477,8 +477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -960,8 +960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -1666,29 +1666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 1d1139ff2fe3eb546848ed0929281165, type: 3}
---- !u!114 &337470325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337470322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  CollisionTag: 
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!114 &337470326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1702,8 +1679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -1769,8 +1746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -1838,8 +1815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -2756,8 +2733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -3116,29 +3093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 1d1139ff2fe3eb546848ed0929281165, type: 3}
---- !u!114 &569212108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569212105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  CollisionTag: 
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!114 &569212109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3152,8 +3106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -4484,8 +4438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -4748,7 +4702,6 @@ GameObject:
   - component: {fileID: 976744718}
   - component: {fileID: 976744717}
   - component: {fileID: 976744716}
-  - component: {fileID: 976744719}
   m_Layer: 5
   m_Name: Farm_HUD
   m_TagString: Untagged
@@ -4816,23 +4769,6 @@ RectTransform:
   m_AnchoredPosition: {x: 545, y: -36}
   m_SizeDelta: {x: -1259, y: -157.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &976744719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976744715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ee6dc1adc5e394987aa6dd39b4cca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localCollider: {fileID: 0}
-  HUD: {fileID: 0}
-  mousePos: {x: 0, y: 0, z: 0}
-  itemImg: {fileID: 0}
-  parentObj: {fileID: 0}
 --- !u!1 &982082170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f6b63a1363b5a6b45922ece904c7482b,
@@ -5143,29 +5079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 1d1139ff2fe3eb546848ed0929281165, type: 3}
---- !u!114 &1035824407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035824404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  CollisionTag: 
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!114 &1035824408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5179,8 +5092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5268,8 +5181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5551,13 +5464,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219869486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2427a0435b67ead4ba80483851775046, type: 3}
+  m_Script: {fileID: 11500000, guid: d0ee6dc1adc5e394987aa6dd39b4cca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUD: {fileID: 0}
-  mousePos: {x: 0, y: 0, z: 0}
-  itemImg: {fileID: 0}
-  parentObj: {fileID: 1933083132}
 --- !u!1001 &1225552474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6519,8 +6428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6860,8 +6769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
@@ -8083,8 +7992,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/pick up
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
