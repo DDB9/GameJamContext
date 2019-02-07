@@ -21,7 +21,6 @@ public class HUD : MonoBehaviour
         foreach(Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
-            Debug.Log(image.name);
 
             if (!image.enabled)
             {

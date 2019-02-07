@@ -94,7 +94,7 @@ public class CharacterControls : MonoBehaviour {
             if (d < 0f)
             {
                 if (currentSelected <= inventorySlots.Length) currentSelected--;
-                if (currentSelected <= -inventorySlots.Length) currentSelected = 3;
+                if (currentSelected < 0) currentSelected = 3;
             }
 
             if (currentSelected == 0) inventorySlots[0].enabled = false;

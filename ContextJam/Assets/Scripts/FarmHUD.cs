@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FarmHUD : MonoBehaviour {
-
-    public Transform itemInvPos;
+public class FarmHUD : MonoBehaviour 
+{
+    public Sprite bBerry;
+    public Sprite potato;
+    public Sprite tomato;
 
     private void FixedUpdate()
     {
@@ -22,14 +24,28 @@ public class FarmHUD : MonoBehaviour {
                 Vector3 temp = Input.mousePosition;
                 temp.z = 10f; // Set this to be the distance you want the object to be placed in front of the camera.
                 hit.collider.transform.position = temp;
-
-
             }
-            if (Input.GetMouseButtonUp(0))
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Collider>().tag == "Pickupable")
+        {
+            Transform farmHUD = transform.Find("Farm_HUD");
+            foreach (Transform slot in farmHUD)
             {
-                if (hit.collider == null)
+                Image image = slot.GetChild(0).GetComponent<Image>();
+
+                if (image != enabled)
                 {
-                    hit.collider.transform.position = itemInvPos.position;
+                    image.enabled = true;
+                    if (collision.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+                    {
+                        image.sprite = bBerry;
+                    }
+
+                    break;
                 }
             }
         }
