@@ -125,7 +125,6 @@
             <destination>{cd5fa150-cf7c-4889-9c4b-cc7d4d0eb15a}</destination>
             <destination>{a5276696-48df-4a6e-bd50-2736f5078c0e}</destination>
             <destination>{b1add170-c8de-4955-b918-e237a8601f75}</destination>
-            <destination>{ed2d3943-058a-457f-8b10-59624ab2bca0}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{89f18172-e277-4f93-992b-e5432864d9ed}">
@@ -208,11 +207,6 @@
             <destination>{87c96123-9bca-4102-8f7c-e4deb5a57f04}</destination>
         </relationship>
     </object>
-    <object class="SingleSound" id="{ed2d3943-058a-457f-8b10-59624ab2bca0}">
-        <relationship name="audioFile">
-            <destination>{78ea3bb4-95c6-46c6-9030-7d91a8cbc364}</destination>
-        </relationship>
-    </object>
     <object class="Automator" id="{9c66a9e8-df25-4013-82dc-23f9c950bcf9}">
         <property name="nameOfPropertyBeingAutomated">
             <value>volume</value>
@@ -244,7 +238,7 @@
             <value>0.21244925575101489</value>
         </property>
         <property name="value">
-            <value>-10</value>
+            <value>2.5</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{262a961a-a64d-440f-896c-90208d36a8f5}">
@@ -252,7 +246,7 @@
             <value>0.012178619756427606</value>
         </property>
         <property name="value">
-            <value>-80</value>
+            <value>-7.5</value>
         </property>
     </object>
 </objects>
