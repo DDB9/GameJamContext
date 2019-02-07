@@ -13,119 +13,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-<<<<<<< HEAD
-  - {fileID: 114298742591608512}
+  - {fileID: 114393191777528506}
+  - {fileID: 114116883791099562}
   EditorEvents:
-  - {fileID: 114057937759331432}
-  - {fileID: 114456148257638224}
-  - {fileID: 114281013419274974}
-=======
-  - {fileID: 114717002597484332}
-  - {fileID: 114276784652449252}
-  EditorEvents:
-  - {fileID: 114273775537090676}
-  - {fileID: 114636101843376718}
-  - {fileID: 114749998001570360}
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
+  - {fileID: 114358697897342332}
+  - {fileID: 114343848814531252}
+  - {fileID: 114144866473773772}
   MasterBanks:
-  - {fileID: 114276784652449252}
+  - {fileID: 114116883791099562}
   StringsBanks:
-<<<<<<< HEAD
-  - {fileID: 114409654931699884}
-  - {fileID: 114596081126039968}
+  - {fileID: 114393191777528506}
   stringsBankWriteTime: 636850697620000000
-=======
-  - {fileID: 114717002597484332}
-  stringsBankWriteTime: 636850697190766856
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
   cacheVersion: 3
---- !u!114 &114057937759331432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/cow
-  guid: af120ca1b62c7847a9fb199091bb0f74
-  Banks:
-  - {fileID: 114298742591608512}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2730
---- !u!114 &114264728527252484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/cow
-  guid: af120ca1b62c7847a9fb199091bb0f74
-  Banks:
-  - {fileID: 114349986004562456}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2730
-<<<<<<< HEAD
---- !u!114 &114281013419274974
-=======
---- !u!114 &114273775537090676
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/forest
-  guid: afcd80322d25234caf175ed8db0f4147
-  Banks:
-  - {fileID: 114298742591608512}
-  IsStream: 1
-=======
-  Path: event:/foosteps
-  guid: 75bed2f1264ddf4496a8075198fb7922
-  Banks:
-  - {fileID: 114276784652449252}
-  IsStream: 0
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-<<<<<<< HEAD
-  Length: 51280
---- !u!114 &114298742591608512
-=======
-  Length: 750
---- !u!114 &114276784652449252
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
+--- !u!114 &114116883791099562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,21 +37,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/Master
     Bank.bank
   lastModified: 636850697620000000
-=======
-  Path: C:\Users\ddebr\Desktop\GameJamContext\ContextJam\Assets\fmodbuilds\Desktop\Master
-    Bank.bank
-  lastModified: 636850697191035196
->>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 722272
   Exists: 1
---- !u!114 &114344723093499302
+--- !u!114 &114144866473773772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,10 +57,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Forest
+  Path: event:/forest
   guid: afcd80322d25234caf175ed8db0f4147
   Banks:
-  - {fileID: 114604917862627792}
+  - {fileID: 114116883791099562}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -174,7 +68,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 51280
---- !u!114 &114349986004562456
+--- !u!114 &114343848814531252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,37 +77,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 1
---- !u!114 &114409654931699884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: ../Game Jam FMod/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636850630300000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 714
-  Exists: 1
---- !u!114 &114456148257638224
+  Path: event:/cow
+  guid: af120ca1b62c7847a9fb199091bb0f74
+  Banks:
+  - {fileID: 114116883791099562}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2730
+--- !u!114 &114358697897342332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +106,7 @@ MonoBehaviour:
   Path: event:/foosteps
   guid: 75bed2f1264ddf4496a8075198fb7922
   Banks:
-  - {fileID: 114298742591608512}
+  - {fileID: 114116883791099562}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -236,27 +114,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 750
---- !u!114 &114495064229734830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.bank
-  lastModified: 636850630300000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 0
---- !u!114 &114596081126039968
+--- !u!114 &114393191777528506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,293 +133,3 @@ MonoBehaviour:
   - Name: Desktop
     Value: 812
   Exists: 1
---- !u!114 &114604917862627792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/Master
-    Bank.bank
-  lastModified: 636850654940000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 706528
-  Exists: 0
---- !u!114 &114636101843376718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/cow
-  guid: af120ca1b62c7847a9fb199091bb0f74
-  Banks:
-  - {fileID: 114276784652449252}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2730
---- !u!114 &114640157941579986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.strings.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 714
-  Exists: 1
---- !u!114 &114672081738935902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\fmodbuilds\Desktop\Master Bank.strings.bank
-  lastModified: 636850639941867585
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 714
-  Exists: 1
---- !u!114 &114689341908118918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.strings.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 714
-  Exists: 1
---- !u!114 &114696866109961770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/HKU/comp/jaar 3/Game_Jam/Game Jam FMod/Build/Desktop/Master
-    Bank.strings.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 714
-  Exists: 1
---- !u!114 &114717002597484332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\fmodbuilds\Desktop\Master Bank.strings.bank
-  lastModified: 636850697190766856
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 812
-  Exists: 1
---- !u!114 &114749998001570360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/forest
-  guid: afcd80322d25234caf175ed8db0f4147
-  Banks:
-  - {fileID: 114276784652449252}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 51280
---- !u!114 &114759689743352764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 1
---- !u!114 &114766092581934542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\ddebr\Desktop\GameJamContext\ContextJam\Assets\fmodbuilds\Desktop\Master
-    Bank.bank
-  lastModified: 636850639941837657
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 1
---- !u!114 &114771550941400942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/cow
-  guid: af120ca1b62c7847a9fb199091bb0f74
-  Banks:
-  - {fileID: 114802939473670052}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2730
---- !u!114 &114786840993116222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Build/Desktop/Master
-    Bank.bank
-  lastModified: 636850630300000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 0
---- !u!114 &114802939473670052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/stijn/Documents/HKU/comp/jaar 3/Game_Jam/Game Jam FMod/Build/Desktop/Master
-    Bank.bank
-  lastModified: 636850615090000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 39840
-  Exists: 1
---- !u!114 &114999929542596950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/cow
-  guid: af120ca1b62c7847a9fb199091bb0f74
-  Banks:
-  - {fileID: 114759689743352764}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2730
