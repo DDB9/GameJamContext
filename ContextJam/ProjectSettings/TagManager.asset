@@ -9,6 +9,7 @@ TagManager:
   - Plot_Small
   - Plot_Medium
   - Plot_Large
+  - Inventory Slot
   layers:
   - Default
   - TransparentFX
