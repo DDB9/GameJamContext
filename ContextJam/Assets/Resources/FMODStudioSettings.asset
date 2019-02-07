@@ -16,7 +16,11 @@ MonoBehaviour:
   HasPlatforms: 1
   sourceProjectPath: ../Game Jam FMod/Game Jam FMod.fspro
   SourceProjectPathUnformatted: ../Game Jam FMod/Game Jam FMod.fspro
+<<<<<<< HEAD
   SourceBankPathUnformatted: Assets/fmodbuilds
+=======
+  SourceBankPathUnformatted: Assets\fmodbuilds
+>>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -61,6 +65,10 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master Bank
+<<<<<<< HEAD
   - Master Bank
   Banks:
   - Master Bank
+=======
+  Banks: []
+>>>>>>> 5eec1a649c9f38531af75757ef585e5096308e19

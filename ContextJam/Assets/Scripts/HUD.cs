@@ -15,10 +15,10 @@ public class HUD : MonoBehaviour
 
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {
-        Transform inventoryPanel = this.transform;
+        Transform inventoryPanel = transform.Find("Inventory");
         foreach(Transform slot in inventoryPanel)
         {
-            Image image = slot.GetChild(0).GetChild(0).GetComponent<Image>();
+            Image image = slot.GetChild(0).GetComponent<Image>();
             Debug.Log(image.name);
 
             if (!image.enabled)
