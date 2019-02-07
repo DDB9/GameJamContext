@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Workspace" id="{6db48216-c572-4dad-b466-17354e52c591}">
+        <property name="builtBanksOutputDirectory">
+            <value>../ContextJam/Assets/fmodbuilds</value>
+        </property>
+        <relationship name="masterEventFolder">
+            <destination>{dc4cbd9d-4a62-41ef-91fa-0896cf3d266e}</destination>
+        </relationship>
+        <relationship name="masterTagFolder">
+            <destination>{0fc32e4c-a7f3-4c60-a8fd-a42f9a0130c6}</destination>
+        </relationship>
+        <relationship name="masterEffectPresetFolder">
+            <destination>{ee6b0f39-7ff8-456f-b5cb-ef6aba8676c3}</destination>
+        </relationship>
+        <relationship name="masterParameterPresetFolder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="masterBankFolder">
+            <destination>{70a74087-d3a6-4ceb-8442-4d1b118acb48}</destination>
+        </relationship>
+        <relationship name="masterAssetFolder">
+            <destination>{83c1cfb8-e9d0-484c-a524-14c7a4333a29}</destination>
+        </relationship>
+        <relationship name="mixer">
+            <destination>{b52541db-442e-4224-baf4-ba1df47547ac}</destination>
+        </relationship>
+        <relationship name="platforms">
+            <destination>{82bde405-c704-4ecf-b9b4-668b8f6078a0}</destination>
+        </relationship>
+    </object>
+</objects>
