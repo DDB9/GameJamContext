@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
     public Inventory Inventory;
+    public GameObject farmOverlay;
+    public GameObject playerCam;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +31,13 @@ public class HUD : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void ConfirmFarm()
+    {
+        farmOverlay.SetActive(false);
+        playerCam.GetComponent<cameraController>().enabled = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickupable
+  - Interactable
+  - Plot_Small
+  - Plot_Medium
+  - Plot_Large
   layers:
   - Default
   - TransparentFX

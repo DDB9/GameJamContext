@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CharacterControls : MonoBehaviour {
 
+    public GameObject playerCam;
     public float speed = 7.0f;
     public float gravity = 20.0f;
     public float maxVelocityChange = 10.0f;
@@ -14,6 +15,7 @@ public class CharacterControls : MonoBehaviour {
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
+    public GameObject farmOverlay;
     public int currentSelected = 0;
 
     public UnityEngine.UI.Button[] inventorySlots = new UnityEngine.UI.Button[4];
@@ -103,6 +105,24 @@ public class CharacterControls : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
+
+        // Opens de Farm HUD.
+        if (Input.GetMouseButtonDown(1))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.tag == "Interactable")
+                {
+                    farmOverlay.SetActive(true);
+                    playerCam.GetComponent<cameraController>().enabled = false;
+
+                    Cursor.lockState = CursorLockMode.None;
+                }
+            }
+        }
     }
 
     void OnCollisionStay()
