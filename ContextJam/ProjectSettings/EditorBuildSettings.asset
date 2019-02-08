@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 0458690c471c05a47b24f808485210f9
+  - enabled: 1
+    path: Assets/Scenes/Ranchwatch.unity
+    guid: ac41cfd08e0fb24478c7e1bbb7e1a43b
   m_configObjects: {}
