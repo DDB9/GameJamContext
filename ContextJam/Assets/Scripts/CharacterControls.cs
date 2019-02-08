@@ -72,13 +72,17 @@ public class CharacterControls : MonoBehaviour {
         {
             if (!_inventory.activeInHierarchy)
             {
-                Debug.Log("Open");
                 _inventory.SetActive(true);
+                playerCam.GetComponent<cameraController>().enabled = false;
+
+                Cursor.lockState = CursorLockMode.None;
             }
             else if (_inventory.activeInHierarchy)
             {
-                Debug.Log("Close");
                 _inventory.SetActive(false);
+                playerCam.GetComponent<cameraController>().enabled = true;
+
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
 
@@ -94,7 +98,7 @@ public class CharacterControls : MonoBehaviour {
             if (d < 0f)
             {
                 if (currentSelected <= inventorySlots.Length) currentSelected--;
-                if (currentSelected <= -inventorySlots.Length) currentSelected = 3;
+                if (currentSelected < 0) currentSelected = 3;
             }
 
             if (currentSelected == 0) inventorySlots[0].enabled = false;
@@ -107,6 +111,7 @@ public class CharacterControls : MonoBehaviour {
             else inventorySlots[3].enabled = true;
         }
 
+        // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
 
@@ -150,6 +155,11 @@ public class CharacterControls : MonoBehaviour {
             {
                 inventory.AddItem(item);
             }
+        }
+        
+        if (hit.collider.name == "blueberries")
+        {
+            GameObject.Find("Slider").GetComponent<Slider>().value += 30;
         }
     }
 }

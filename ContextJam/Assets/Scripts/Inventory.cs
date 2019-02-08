@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     private List<IInventoryItem> mItems = new List<IInventoryItem>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
+    public event EventHandler<InventoryEventArgs> ItemRemoved;
 
     public void AddItem(IInventoryItem item)
     {
@@ -23,11 +24,25 @@ public class Inventory : MonoBehaviour
 
                 item.OnPickup();
 
-                if (ItemAdded != null)
-                {
-                    ItemAdded(this, new InventoryEventArgs(item));
-                }
+                ItemAdded?.Invoke(this, new InventoryEventArgs(item));
             }
+        }
+    }
+
+    public void RemoveItem(IInventoryItem item)
+    {
+        Debug.Log("Remove Item");
+
+        if (mItems.Contains(item))
+        {
+            Debug.Log("Contains Item");
+
+            mItems.Remove(item);
+            item.OnDrop();
+
+            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
+            if (collider != null) collider.enabled = true;
+            ItemRemoved?.Invoke(this, new InventoryEventArgs(item));
         }
     }
 }
