@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
+    public GameObject player;
     public Inventory Inventory;
     public GameObject farmOverlay;
+    public GameObject invOverlay;
     public GameObject playerCam;
 
     // Start is called before the first frame update
@@ -65,5 +67,10 @@ public class HUD : MonoBehaviour
         playerCam.GetComponent<cameraController>().enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        if (player.GetComponent<CharacterControls>().inventoryActive)
+        {
+            invOverlay.SetActive(false);
+        } 
     }
 }

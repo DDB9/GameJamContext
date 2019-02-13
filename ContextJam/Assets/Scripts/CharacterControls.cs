@@ -15,6 +15,7 @@ public class CharacterControls : MonoBehaviour {
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
+    public bool inventoryActive;
     public GameObject farmOverlay;
     public int currentSelected = 0;
 
@@ -76,6 +77,8 @@ public class CharacterControls : MonoBehaviour {
                 playerCam.GetComponent<cameraController>().enabled = false;
 
                 Cursor.lockState = CursorLockMode.None;
+
+                inventoryActive = true;
             }
             else if (_inventory.activeInHierarchy)
             {
@@ -83,6 +86,8 @@ public class CharacterControls : MonoBehaviour {
                 playerCam.GetComponent<cameraController>().enabled = true;
 
                 Cursor.lockState = CursorLockMode.Locked;
+
+                inventoryActive = false;
             }
         }
 
