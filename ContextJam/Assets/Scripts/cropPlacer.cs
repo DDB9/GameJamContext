@@ -5,10 +5,13 @@ using UnityEngine;
 public class cropPlacer : MonoBehaviour
 {
     private Grid grid;
+
+    public GameObject blueberry;
+
     // Start is called before the first frame update
     void Awake()
     {
-        grid = FindObjectOfType<Grid>();  
+        grid = FindObjectOfType<Grid>();
     }
 
     // Update is called once per frame
@@ -21,7 +24,11 @@ public class cropPlacer : MonoBehaviour
 
             if (Physics.Raycast(ray, out hitInfo))
             {
-                PlaceCubeNear(hitInfo.point);
+                if (hitInfo.transform.tag == "Interactable")
+                {
+                    PlaceCubeNear(hitInfo.point);
+                }
+                else return;
             }
         }
     }
@@ -30,6 +37,6 @@ public class cropPlacer : MonoBehaviour
     {
         var finalPosition = grid.GetNearestPointOnGrid(clickPoint);
         Debug.Log("Get current selected item, place on grid");
-        GameObject.CreatePrimitve(PrimitiveType.Cube).transform.position = finalPosition;
+        Instantiate(blueberry, finalPosition, Quaternion.identity);
     }
 }
