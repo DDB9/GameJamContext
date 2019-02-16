@@ -162,9 +162,9 @@ public class CharacterControls : MonoBehaviour {
             }
         }
         
-        if (hit.collider.name == "blueberries")
-        {
-            GameObject.Find("Slider").GetComponent<Slider>().value += 30;
-        }
+        //if (hit.collider.name == "blueberries")
+        //{
+        //    GameObject.Find("Slider").GetComponent<Slider>().value += 30;
+        //}
     }
 }
