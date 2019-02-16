@@ -5,7 +5,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 
-public class CharacterControls : MonoBehaviour {
+public class CharacterControls : MonoBehaviour
+{
+    public static CharacterControls instance = null;
 
     public GameObject playerCam;
     public float speed = 7.0f;
@@ -17,7 +19,8 @@ public class CharacterControls : MonoBehaviour {
     public GameObject _inventory;
     public bool inventoryActive;
     public GameObject farmOverlay;
-    public int currentSelected = 0;
+
+    public static int currentSelected = 0;
 
     public Image[] inventorySlots = new Image[4];
 
