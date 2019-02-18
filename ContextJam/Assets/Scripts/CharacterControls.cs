@@ -5,7 +5,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 
-public class CharacterControls : MonoBehaviour {
+public class CharacterControls : MonoBehaviour
+{
+    public static CharacterControls instance = null;
 
     public GameObject playerCam;
     public float speed = 7.0f;
@@ -15,8 +17,10 @@ public class CharacterControls : MonoBehaviour {
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
+    public bool inventoryActive;
     public GameObject farmOverlay;
-    public int currentSelected = 0;
+
+    public static int currentSelected = 0;
 
     public Image[] inventorySlots = new Image[4];
 
@@ -76,6 +80,8 @@ public class CharacterControls : MonoBehaviour {
                 playerCam.GetComponent<cameraController>().enabled = false;
 
                 Cursor.lockState = CursorLockMode.None;
+
+                inventoryActive = true;
             }
             else if (_inventory.activeInHierarchy)
             {
@@ -83,6 +89,8 @@ public class CharacterControls : MonoBehaviour {
                 playerCam.GetComponent<cameraController>().enabled = true;
 
                 Cursor.lockState = CursorLockMode.Locked;
+
+                inventoryActive = false;
             }
         }
 
@@ -157,9 +165,9 @@ public class CharacterControls : MonoBehaviour {
             }
         }
         
-        if (hit.collider.name == "blueberries")
-        {
-            GameObject.Find("Slider").GetComponent<Slider>().value += 30;
-        }
+        //if (hit.collider.name == "blueberries")
+        //{
+        //    GameObject.Find("Slider").GetComponent<Slider>().value += 30;
+        //}
     }
 }
