@@ -59,18 +59,4 @@ public class HUD : MonoBehaviour
             }
         }
     }
-
-    // Exiting the Farm HUD.
-    public void ConfirmFarm()
-    {
-        farmOverlay.SetActive(false);
-        playerCam.GetComponent<cameraController>().enabled = true;
-
-        Cursor.lockState = CursorLockMode.Locked;
-
-        if (player.GetComponent<CharacterControls>().inventoryActive)
-        {
-            invOverlay.SetActive(false);
-        } 
-    }
 }

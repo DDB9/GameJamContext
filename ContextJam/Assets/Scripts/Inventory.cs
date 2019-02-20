@@ -41,8 +41,15 @@ public class Inventory : MonoBehaviour
             item.OnDrop();
 
             Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-            if (collider != null) collider.enabled = true;
-            ItemRemoved?.Invoke(this, new InventoryEventArgs(item));
+            if (collider != null)
+            {
+                collider.enabled = true;
+            }
+            
+            if (ItemRemoved != null)
+            {
+                ItemRemoved(this, new InventoryEventArgs(item));
+            }
         }
     }
 }
