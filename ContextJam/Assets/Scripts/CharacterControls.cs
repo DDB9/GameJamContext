@@ -9,7 +9,6 @@ public class CharacterControls : MonoBehaviour
 {
     public static CharacterControls instance = null;
 
-    public GameObject playerCam;
     public float speed = 7.0f;
     public float gravity = 20.0f;
     public float maxVelocityChange = 10.0f;
@@ -77,19 +76,13 @@ public class CharacterControls : MonoBehaviour
             if (!_inventory.activeInHierarchy)
             {
                 _inventory.SetActive(true);
-                playerCam.GetComponent<cameraController>().enabled = false;
+                inventoryActive = true;
 
                 Cursor.lockState = CursorLockMode.None;
-
-                inventoryActive = true;
             }
             else if (_inventory.activeInHierarchy)
             {
                 _inventory.SetActive(false);
-                playerCam.GetComponent<cameraController>().enabled = true;
-
-                Cursor.lockState = CursorLockMode.Locked;
-
                 inventoryActive = false;
             }
         }
@@ -122,24 +115,6 @@ public class CharacterControls : MonoBehaviour
         // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
-
-        // Activate Farm HUD.
-        if (Input.GetMouseButtonDown(1))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.collider.tag == "Interactable")
-                {
-                    farmOverlay.SetActive(true);
-                    playerCam.GetComponent<cameraController>().enabled = false;
-
-                    Cursor.lockState = CursorLockMode.None;
-                }
-            }
-        }
     }
 
     void OnCollisionStay()
