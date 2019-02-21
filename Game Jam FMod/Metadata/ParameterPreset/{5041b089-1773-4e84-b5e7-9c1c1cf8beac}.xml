@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{5041b089-1773-4e84-b5e7-9c1c1cf8beac}">
+        <property name="name">
+            <value>plantvolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{33e7358c-51a1-43b8-945a-b8a577ab0332}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{33e7358c-51a1-43b8-945a-b8a577ab0332}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

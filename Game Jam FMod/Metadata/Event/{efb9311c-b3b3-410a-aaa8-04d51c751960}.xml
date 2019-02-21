@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{efb9311c-b3b3-410a-aaa8-04d51c751960}">
         <property name="name">
-            <value>drop</value>
+            <value>drop bucket</value>
         </property>
         <property name="outputFormat">
             <value>2</value>

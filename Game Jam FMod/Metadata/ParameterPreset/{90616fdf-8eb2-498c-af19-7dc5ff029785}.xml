@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{90616fdf-8eb2-498c-af19-7dc5ff029785}">
+        <property name="name">
+            <value>newpagevolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{fecc0c39-2c99-43d7-b363-26055287ebef}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{fecc0c39-2c99-43d7-b363-26055287ebef}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
