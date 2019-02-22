@@ -37,4 +37,12 @@ public class Bucket : MonoBehaviour, IInventoryItem
             gameObject.transform.position = hit.point;
         }
     }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Pickupable")
+        {
+            Destroy(other);
+        }
+    }
 }

@@ -77,8 +77,6 @@ public class CharacterControls : MonoBehaviour
             {
                 _inventory.SetActive(true);
                 inventoryActive = true;
-
-                Cursor.lockState = CursorLockMode.None;
             }
             else if (_inventory.activeInHierarchy)
             {

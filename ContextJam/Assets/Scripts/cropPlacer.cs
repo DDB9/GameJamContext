@@ -8,7 +8,8 @@ public class cropPlacer : MonoBehaviour
     private Grid grid;
 
     public GameObject blueberry;
-    public GameObject bucket;
+    public GameObject potato;
+    public GameObject tomato;
 
     public Image[] inventorySlots = new Image[4];
 
@@ -30,6 +31,7 @@ public class cropPlacer : MonoBehaviour
             {
                 if (hitInfo.transform.tag == "Interactable" && hitInfo.transform.tag != "Pickupable")
                 {
+                    Debug.DrawRay(GameObject.Find("Main Camera").transform.position, Vector3.forward);
                     PlaceCubeNear(hitInfo.point);
                 }
                 else return;
@@ -54,7 +56,7 @@ public class cropPlacer : MonoBehaviour
             // Is now bucket for protyping purposes, will become other vegetalbes later.
             if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
             {
-                Instantiate(bucket, finalPosition, Quaternion.identity);
+                Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
             }
         }
@@ -70,7 +72,7 @@ public class cropPlacer : MonoBehaviour
             // Is now bucket for protyping purposes, will become other vegetalbes later.
             if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
             {
-                Instantiate(bucket, finalPosition, Quaternion.identity);
+                Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
             }
         }
@@ -86,7 +88,7 @@ public class cropPlacer : MonoBehaviour
             // Is now bucket for protyping purposes, will become other vegetalbes later.
             if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
             {
-                Instantiate(bucket, finalPosition, Quaternion.identity);
+                Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
             }
         }
@@ -102,7 +104,7 @@ public class cropPlacer : MonoBehaviour
             // Is now bucket for protyping purposes, will become other vegetalbes later.
             if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
             {
-                Instantiate(bucket, finalPosition, Quaternion.identity);
+                Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
             }
         }
