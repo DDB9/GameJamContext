@@ -16,7 +16,6 @@ public class Inventory : MonoBehaviour
     {
         Debug.Log(mItems.Count);
     }
-
     public void AddItem(IInventoryItem item)
     {
         if (mItems.Count < slots)

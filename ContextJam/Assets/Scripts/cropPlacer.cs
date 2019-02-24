@@ -7,13 +7,9 @@ public class cropPlacer : MonoBehaviour
 {
     private Grid grid;
 
-    public Inventory _inventory;
-
     public GameObject blueberry;
     public GameObject potato;
     public GameObject tomato;
-
-    public IInventoryItem iBlueberry;
 
     public Image[] inventorySlots = new Image[4];
 
@@ -56,29 +52,44 @@ public class cropPlacer : MonoBehaviour
         // Checks what item is in the currently selected slot.
         if (CharacterControls.currentSelected == 0)
         {
-            IInventoryItem item = firstInventorySlot.gameObject.GetComponent<ItemDragHandler>().Item;
-
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+            if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
+                Collider[] hitColliders = Physics.OverlapBox(finalPosition, Vector3.one, Quaternion.identity);
+                foreach (Collider col in hitColliders)
+                {
+                    if (col.tag == "Border" || col.tag == "Pickupable")
+                    {
+                        Debug.Log("Collision detected!");
+                    }
+                }
+
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(0);
             }
 
-            // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato")
+            if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(0);
             }
+
+            if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            {
+                Instantiate(tomato, finalPosition, Quaternion.identity);
+                firstInventorySlot.GetComponent<Image>().enabled = false;
+                firstInventorySlot.GetComponent<Image>().sprite = null;
+                Inventory.mItems.RemoveAt(0);
+            }
+
         }
 
         if (CharacterControls.currentSelected == 1)
         {
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+            if (secondInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
@@ -86,10 +97,17 @@ public class cropPlacer : MonoBehaviour
                 Inventory.mItems.RemoveAt(1);
             }
 
-            // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato")
+            if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
+                secondInventorySlot.GetComponent<Image>().enabled = false;
+                secondInventorySlot.GetComponent<Image>().sprite = null;
+                Inventory.mItems.RemoveAt(1);
+            }
+
+            if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            {
+                Instantiate(tomato, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(1);
@@ -98,7 +116,7 @@ public class cropPlacer : MonoBehaviour
 
         if (CharacterControls.currentSelected == 2)
         {
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
@@ -106,10 +124,17 @@ public class cropPlacer : MonoBehaviour
                 Inventory.mItems.RemoveAt(2);
             }
 
-            // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato")
+            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
+                thirdInventorySlot.GetComponent<Image>().enabled = false;
+                thirdInventorySlot.GetComponent<Image>().sprite = null;
+                Inventory.mItems.RemoveAt(2);
+            }
+
+            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            {
+                Instantiate(tomato, finalPosition, Quaternion.identity);
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(2);
@@ -118,21 +143,28 @@ public class cropPlacer : MonoBehaviour
 
         if (CharacterControls.currentSelected == 3)
         {
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
+                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
             }
 
-            // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato")
+            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
+                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
+            }
+
+            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            {
+                Instantiate(tomato, finalPosition, Quaternion.identity);
+                fourthInventorySlot.GetComponent<Image>().enabled = false;
+                fourthInventorySlot.GetComponent<Image>().sprite = null;
+                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
             }
         }
     }
