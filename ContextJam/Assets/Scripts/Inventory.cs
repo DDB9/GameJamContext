@@ -7,10 +7,15 @@ public class Inventory : MonoBehaviour
 {
     private const int slots = 4;
 
-    private List<IInventoryItem> mItems = new List<IInventoryItem>();
+    public static List<IInventoryItem> mItems = new List<IInventoryItem>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
+
+    private void Update()
+    {
+        Debug.Log(mItems.Count);
+    }
 
     public void AddItem(IInventoryItem item)
     {
