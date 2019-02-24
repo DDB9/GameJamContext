@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ranchwatch.unity
     guid: ac41cfd08e0fb24478c7e1bbb7e1a43b
+  - enabled: 1
+    path: Assets/Scenes/Lake.unity
+    guid: c2b47aff1b85e8341b67dd6f6dab24ed
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 65473ff8e20d2684da61ac1d850232b4
   m_configObjects: {}

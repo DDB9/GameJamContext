@@ -137,10 +137,5 @@ public class CharacterControls : MonoBehaviour
                 inventory.AddItem(item);
             }
         }
-        
-        //if (hit.collider.name == "blueberries")
-        //{
-        //    GameObject.Find("Slider").GetComponent<Slider>().value += 30;
-        //}
     }
 }

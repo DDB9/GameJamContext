@@ -14,32 +14,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
---- !u!65 &1863810045
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3141443658248593741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12, y: 0.0005, z: 0.12}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1702750795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3141443658248593741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38c420361f54b8b4d9f6347f1899cc1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Image: {fileID: 21300000, guid: 23834e91c82244842b43f35d2634d81d, type: 3}
 --- !u!114 &1702750800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +37,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &70845377637276166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3141443658248593741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3051655800bc2458834f773fbc1ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 23834e91c82244842b43f35d2634d81d, type: 3}
 --- !u!1001 &3141443658248497133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,7 +59,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_Name
-      value: Bucket Variant
+      value: Bucket
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_TagString
@@ -80,15 +67,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07760322
+      value: 12.93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18468894
+      value: 19.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6380731
+      value: 17.42
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87ec8eebbf3fbed4297846f26d1702bb, type: 3}
       propertyPath: m_LocalRotation.x

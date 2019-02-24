@@ -11,6 +11,8 @@ public class cropPlacer : MonoBehaviour
     public GameObject potato;
     public GameObject tomato;
 
+    public IInventoryItem iBlueberry;
+
     public Image[] inventorySlots = new Image[4];
 
     // Start is called before the first frame update
@@ -51,13 +53,15 @@ public class cropPlacer : MonoBehaviour
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
 
             // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
+            if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
         }
 
@@ -67,13 +71,15 @@ public class cropPlacer : MonoBehaviour
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
 
             // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
+            if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
         }
 
@@ -83,13 +89,15 @@ public class cropPlacer : MonoBehaviour
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
 
             // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
+            if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
         }
 
@@ -99,13 +107,15 @@ public class cropPlacer : MonoBehaviour
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
 
             // Is now bucket for protyping purposes, will become other vegetalbes later.
-            if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "Bucket")
+            if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite = null;
             }
         }
     }

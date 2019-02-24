@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bucket : MonoBehaviour, IInventoryItem
+public class Potato : MonoBehaviour, IInventoryItem
 {
     public string Name
     {
         get
         {
-            return "Bucket";
+            return "Potato";
         }
     }
 
@@ -35,6 +35,14 @@ public class Bucket : MonoBehaviour, IInventoryItem
             Debug.Log("Hit!");
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Pickupable")
+        {
+            Destroy(other);
         }
     }
 }
