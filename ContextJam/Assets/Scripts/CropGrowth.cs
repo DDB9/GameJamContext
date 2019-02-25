@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bb_growth : MonoBehaviour
+public class CropGrowth : MonoBehaviour
 {
     bool hasRun = false;
     
