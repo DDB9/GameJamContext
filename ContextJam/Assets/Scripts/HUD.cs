@@ -25,6 +25,7 @@ public class HUD : MonoBehaviour
         foreach(Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
+
             ItemDragHandler itemDragHandler = image.GetComponent<ItemDragHandler>();
 
             if (!image.enabled)
@@ -46,6 +47,7 @@ public class HUD : MonoBehaviour
         foreach(Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
+            
             ItemDragHandler itemDragHandler = image.GetComponent<ItemDragHandler>();
 
             if (itemDragHandler.Item.Equals(e.Item))

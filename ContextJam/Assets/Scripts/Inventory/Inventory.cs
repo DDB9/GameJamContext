@@ -12,10 +12,6 @@ public class Inventory : MonoBehaviour
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
 
-    private void Update()
-    {
-        Debug.Log(mItems.Count);
-    }
     public void AddItem(IInventoryItem item)
     {
         if (mItems.Count < slots)
