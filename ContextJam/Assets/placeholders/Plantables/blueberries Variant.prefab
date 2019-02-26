@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4972707925537765687}
   - component: {fileID: 1689550017964198913}
   m_Layer: 0
-  m_Name: bb_fase4 (1)
+  m_Name: blueberries Variant
   m_TagString: Pickupable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8148234484521600663}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.881, y: 18.878311, z: 7.101}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 75, y: 75, z: 75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
