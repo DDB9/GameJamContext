@@ -29,7 +29,7 @@ public class CharacterControls : MonoBehaviour
 
     void Awake()
     {
-        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play.
+        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play (if active).
 
         sprintSpeed = speed * 1.50f;
         GetComponent<Rigidbody>().freezeRotation = true;

@@ -29,7 +29,9 @@ public class cropPlacer : MonoBehaviour
 
             if (Physics.Raycast(ray, out hitInfo))
             {
-                if (hitInfo.transform.tag == "Interactable" && hitInfo.transform.tag != "Pickupable")
+                if (hitInfo.transform.tag == "Interactable" 
+                    && hitInfo.transform.tag != "Pickupable"
+                    && hitInfo.transform.tag != "Occupied")
                 {
                     Debug.DrawRay(GameObject.Find("Main Camera").transform.position, Vector3.forward);
                     PlaceCubeNear(hitInfo.point);
