@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public class GridManager : MonoBehaviour
 {
     [SerializeField]
-    private float spacing = 1f;
+    private float spacing = 5f;
 
     public float Size { get { return spacing; } }
 
@@ -29,10 +29,10 @@ public class Grid : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
-        for (float x = 0; x < 3; x += spacing)
+        Gizmos.color = Color.green;
+        for (float x = 0; x < Size; x += spacing)
         {
-            for (float z = 0; z < 3; z += spacing)
+            for (float z = 0; z < Size; z += spacing)
             {
                 var point = GetNearestPointOnGrid(new Vector3(x, 0f, z));
                 Gizmos.DrawSphere(point, 0.1f);

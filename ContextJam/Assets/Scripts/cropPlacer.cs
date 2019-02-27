@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class cropPlacer : MonoBehaviour
 {
-    private Grid grid;
+    private GridManager grid;
 
     public GameObject blueberry;
     public GameObject potato;
@@ -16,7 +16,7 @@ public class cropPlacer : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        grid = FindObjectOfType<Grid>();
+        grid = FindObjectOfType<GridManager>();
     }
 
     // Update is called once per frame
