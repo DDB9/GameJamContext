@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3450166829786833282}
   - component: {fileID: 3899479058770706604}
   - component: {fileID: 1116025538721026188}
+  - component: {fileID: 2648544550475169820}
   m_Layer: 0
   m_Name: bb_fase1
   m_TagString: Untagged
@@ -77,6 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2648544550475169820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536380514303409923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
+  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &2259723216020026208
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +105,7 @@ GameObject:
   - component: {fileID: 4290451196367480222}
   - component: {fileID: 651719647855249438}
   - component: {fileID: 8763938873926326144}
+  - component: {fileID: 6513767617601850671}
   m_Layer: 0
   m_Name: bb_fase4
   m_TagString: Pickupable
@@ -207,6 +222,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 56a98d0b6d2dfae448e085e815be6c0c, type: 3}
+--- !u!65 &6513767617601850671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259723216020026208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24064396, y: 0, z: 0.1021376}
+  m_Center: {x: -0.062346328, y: 0, z: 0}
 --- !u!1 &2912700706689892041
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +246,7 @@ GameObject:
   - component: {fileID: 4046343939985672778}
   - component: {fileID: 762248768825805658}
   - component: {fileID: 8968383709884151913}
+  - component: {fileID: 823921810963404692}
   m_Layer: 0
   m_Name: bb_fase3
   m_TagString: Untagged
@@ -284,6 +313,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &823921810963404692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2912700706689892041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
+  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &3459477956339189763
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 3459477956339189763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.3819838, y: 0, z: -2.5843585}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3450166829786833282}
   - {fileID: 5298853401393433045}
@@ -356,6 +398,7 @@ GameObject:
   - component: {fileID: 5298853401393433045}
   - component: {fileID: 4830397168532043141}
   - component: {fileID: 6455294745790695704}
+  - component: {fileID: 2318638159768822185}
   m_Layer: 0
   m_Name: bb_fase2
   m_TagString: Untagged
@@ -422,3 +465,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2318638159768822185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386423764049401355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
+  m_Center: {x: -0.31247652, y: 0, z: 0}
