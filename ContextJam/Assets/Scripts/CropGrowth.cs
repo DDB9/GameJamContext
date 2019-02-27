@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class CropGrowth : MonoBehaviour
 {
-    bool hasRun = false;
-    
-    void Start(){
+    void Start() {
         // if (!hasRun) {
             StartCoroutine("Grow");
         // }
