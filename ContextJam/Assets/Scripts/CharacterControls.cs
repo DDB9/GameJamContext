@@ -16,8 +16,8 @@ public class CharacterControls : MonoBehaviour
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
+    public GameObject _booklet;
     public bool inventoryActive;
-    public GameObject farmOverlay;
 
     public static int currentSelected = 0;
 
@@ -30,6 +30,7 @@ public class CharacterControls : MonoBehaviour
     void Awake()
     {
         if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play (if active).
+        if (_booklet.activeInHierarchy) _booklet.SetActive(false);      // Do the same for the booklet.
 
         sprintSpeed = speed * 1.75f;
         GetComponent<Rigidbody>().freezeRotation = true;
@@ -71,6 +72,7 @@ public class CharacterControls : MonoBehaviour
 
     void Update()
     {
+        // Open inventory.
         if (Input.GetKeyDown("e"))
         {
             if (!_inventory.activeInHierarchy)
@@ -85,9 +87,23 @@ public class CharacterControls : MonoBehaviour
             }
         }
 
+        // Open booklet.
+        if (Input.GetKeyDown("q")) 
+        {
+            if(!_booklet.activeInHierarchy)
+            {
+                _booklet.SetActive(true);
+            }
+            else if (_booklet.activeInHierarchy)
+            {
+                _booklet.SetActive(false);
+            }
+        }
+
         // Inventory Selection
         if (_inventory.activeInHierarchy)
         {
+            // Scrollwheel input.
             float d = Input.GetAxis("Mouse ScrollWheel");
             if (d > 0f)
             {
@@ -99,7 +115,13 @@ public class CharacterControls : MonoBehaviour
                 if (currentSelected <= inventorySlots.Length) currentSelected--;
                 if (currentSelected < 0) currentSelected = 3;
             }
+            // Keyboard input.
+            if (Input.GetKeyDown(KeyCode.Alpha1)) currentSelected = 0;
+            if (Input.GetKeyDown(KeyCode.Alpha2)) currentSelected = 1;
+            if (Input.GetKeyDown(KeyCode.Alpha3)) currentSelected = 2;
+            if (Input.GetKeyDown(KeyCode.Alpha4)) currentSelected = 3;
 
+            // Setting the slots active and inactive.
             if (currentSelected == 0) inventorySlots[0].enabled = false;
             else inventorySlots[0].enabled = true;
             if (currentSelected == 1) inventorySlots[1].enabled = false;

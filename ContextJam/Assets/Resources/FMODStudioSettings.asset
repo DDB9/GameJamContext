@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 0
   HasPlatforms: 1
-  sourceProjectPath: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Game
+  sourceProjectPath: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod/Game Jam FMod.fspro
+  SourceProjectPathUnformatted: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod/Game
     Jam FMod.fspro
-  SourceProjectPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game
-    Jam FMod/Game Jam FMod.fspro
-  SourceBankPathUnformatted: Assets/fmodbuilds
+  SourceBankPathUnformatted: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -49,7 +48,7 @@ MonoBehaviour:
     Value: 0
   BankDirectorySettings:
   - Platform: 2
-    Value: Desktop
+    Value: 
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -61,6 +60,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master Bank
+  MasterBanks: []
   Banks: []
