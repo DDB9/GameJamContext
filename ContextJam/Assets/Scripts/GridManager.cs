@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,9 +30,9 @@ public class GridManager : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        for (float x = 0; x < 5; x += spacing)
+        for (float x = 0; x < 3; x += spacing)
         {
-            for (float z = 0; z < 5; z += spacing)
+            for (float z = 0; z < 3; z += spacing)
             {
                 var point = GetNearestPointOnGrid(new Vector3(x, 0f, z));
                 Gizmos.DrawSphere(point, 0.1f);
