@@ -11,6 +11,7 @@ TagManager:
   - Plot_Large
   - Inventory Slot
   - Occupied
+  - Gate
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -135,6 +136,25 @@ public class CharacterControls : MonoBehaviour
         // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
+
+        // If the player looks at a gate, change the scene.
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, 
+                            transform.TransformDirection(Vector3.forward),
+                            out hit, Mathf.Infinity)) {
+            if (hit.transform.CompareTag("Forest Gate"))
+            {
+                SceneManager.LoadScene("Forest");
+            }
+            else if (hit.transform.CompareTag("Lake Gate"))
+            {
+                SceneManager.LoadScene("Lake");
+            }
+            else if (hit.transform.CompareTag("Farm Gate"))
+            {
+                SceneManager.LoadScene("Farm");
+            }
+        }
     }
 
     void OnCollisionStay()
