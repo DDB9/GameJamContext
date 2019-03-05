@@ -5642,6 +5642,9 @@ MonoBehaviour:
   staminaHungerRelation: 1
   staminaModifier: 0.5
   hungerModifier: 0.5
+  starvationTimer: 0
+  starvationGainModifier: 0
+  starvationReductionModifier: 0
 --- !u!114 &1935498715
 MonoBehaviour:
   m_ObjectHideFlags: 0
