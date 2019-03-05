@@ -1075,8 +1075,8 @@ MonoBehaviour:
   jumpHeight: 1
   inventory: {fileID: 1927184708}
   _inventory: {fileID: 1219869486}
+  _booklet: {fileID: 0}
   inventoryActive: 0
-  farmOverlay: {fileID: 0}
   inventorySlots:
   - {fileID: 844370379}
   - {fileID: 1871326529}
@@ -7406,7 +7406,7 @@ PrefabInstance:
     - target: {fileID: 5884685225367874895, guid: dde289586b4e6a34980d53eb24d958f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.965504
+      value: 19.83
       objectReference: {fileID: 0}
     - target: {fileID: 5884685225367874895, guid: dde289586b4e6a34980d53eb24d958f5,
         type: 3}
@@ -7416,7 +7416,7 @@ PrefabInstance:
     - target: {fileID: 5884685225367874895, guid: dde289586b4e6a34980d53eb24d958f5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.5118885
+      value: 12.8
       objectReference: {fileID: 0}
     - target: {fileID: 5884685225367874895, guid: dde289586b4e6a34980d53eb24d958f5,
         type: 3}
