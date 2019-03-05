@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef8d824ea7b63742966aaa0e94ac383, type: 3}
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
-  HasSourceProject: 0
+  HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod/Game Jam FMod.fspro
-  SourceProjectPathUnformatted: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod/Game
+  sourceProjectPath: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam FMod/Game
     Jam FMod.fspro
-  SourceBankPathUnformatted: /Users/ddbr/Desktop/GameJamContext/Game Jam FMod
+  SourceProjectPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game
+    Jam FMod/Game Jam FMod.fspro
+  SourceBankPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game Jam
+    FMod/Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -48,7 +50,7 @@ MonoBehaviour:
     Value: 0
   BankDirectorySettings:
   - Platform: 2
-    Value: 
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -60,5 +62,6 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master Bank
   Banks: []
