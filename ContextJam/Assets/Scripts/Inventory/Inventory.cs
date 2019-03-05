@@ -16,10 +16,10 @@ public class Inventory : MonoBehaviour
     {
         if (mItems.Count < slots)
         {
-            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-            if (collider.enabled)
+            Collider col = (item as MonoBehaviour).GetComponent<Collider>();
+            if (col.enabled)
             {
-                collider.enabled = false;
+                col.enabled = false;
                 mItems.Add(item);
 
                 item.OnPickup();
@@ -36,10 +36,10 @@ public class Inventory : MonoBehaviour
             mItems.Remove(item);
             item.OnDrop();
 
-            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-            if (collider != null)
+            Collider col = (item as MonoBehaviour).GetComponent<Collider>();
+            if (col != null)
             {
-                collider.enabled = true;
+                col.enabled = true;
             }
             
             if (ItemRemoved != null)

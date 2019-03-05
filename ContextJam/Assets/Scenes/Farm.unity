@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36778277, g: 0.41671962, b: 0.42833677, a: 1}
+  m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3393,8 +3393,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074345560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35, y: 0, z: 55.8}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 2.5, y: 3, z: -3.5}
+  m_LocalScale: {x: 1.5, y: 2, z: 1.5}
   m_Children:
   - {fileID: 1300478375}
   m_Father: {fileID: 0}
@@ -4843,7 +4843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1663368671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4910,8 +4910,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663368670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 0, z: -1.4}
-  m_LocalScale: {x: 23.23, y: 0.5, z: 21.7}
+  m_LocalPosition: {x: 0.32, y: 0, z: 4.1}
+  m_LocalScale: {x: 7.5, y: 0.5, z: 7.5}
   m_Children:
   - {fileID: 1696514392}
   - {fileID: 1611263000}
@@ -4943,7 +4943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696514391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.033, y: 1, z: 0.021}
+  m_LocalPosition: {x: -0.341, y: 1, z: 0.533}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1663368674}
@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce1c989452e2344875166ab0c87dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spacing: 5
+  spacing: 1.5
 --- !u!1001 &1722757928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5486,7 +5486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 387.59998, y: 456.9}
+  m_AnchoredPosition: {x: 387.5996, y: 456.9}
   m_SizeDelta: {x: 603.2, y: 56.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916707011
