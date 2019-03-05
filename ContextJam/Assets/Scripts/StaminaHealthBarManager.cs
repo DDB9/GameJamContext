@@ -16,6 +16,22 @@ public class StaminaHealthBarManager : MonoBehaviour
     private RawImage staminaBar;
     private RawImage hungerBar;
 
+    //we need a lose-state as much as we need a win-state
+    //the following variables will be used for a starvation mechanic
+
+    private RawImage starvationBar;
+    public float starvationTimer = 0;
+    public float starvationGainModifier;
+    public float starvationReductionModifier;
+
+    public enum playerStates
+    {
+        NORMAL,
+        STARVING,
+    }
+    playerStates State = playerStates.NORMAL;
+    
+
     
 
 
@@ -28,22 +44,28 @@ public class StaminaHealthBarManager : MonoBehaviour
     {
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
+        starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
+        
     }
 
     private void Update()
     {
         staminaBar.transform.localScale = new Vector3(stamina / 100, staminaBar.transform.localScale.y, staminaBar.transform.localScale.z);
         hungerBar.transform.localScale = new Vector3(hunger / 100, hungerBar.transform.localScale.y, hungerBar.transform.localScale.z);
+        starvationBar.transform.localScale = new Vector3(starvationTimer / 50, starvationBar.transform.localScale.y, starvationBar.transform.localScale.z);
 
        
         if(hunger > 25)
         {
             
             staminaHungerRelation = 100 / hunger;
+            State = playerStates.NORMAL;
+            
         }
         else
         {
             staminaHungerRelation = 4;
+            State = playerStates.STARVING;
         }
 
         if(hunger > 0)
@@ -55,6 +77,11 @@ public class StaminaHealthBarManager : MonoBehaviour
             hunger = 0;
         }
 
+        if(hunger > 100)
+        {
+            hunger = 100;
+        }
+        
         if(stamina > 0)
         {
             stamina -= Time.deltaTime * staminaHungerRelation * staminaModifier;
@@ -65,5 +92,41 @@ public class StaminaHealthBarManager : MonoBehaviour
             Debug.Log("End of Day");
         }
         
+        if(starvationTimer >= 50)
+        {
+            starvationTimer = 50;
+            Debug.Log("GAME OVER");
+        }
+
+        if (starvationTimer <= 0)
+        {
+            starvationTimer = 0;
+        }
+
+        switch (State)
+        {
+            case playerStates.STARVING:
+                if(starvationTimer < 50)
+                {
+                    starvationTimer += Time.deltaTime * starvationGainModifier;
+                }
+                
+
+                break;
+
+            case playerStates.NORMAL:
+                if(starvationTimer > 0)
+                {
+                    starvationTimer -= Time.deltaTime * starvationReductionModifier;
+                }
+                
+
+                break;
+
+        }
+
+
     }   
+
+   
 }
