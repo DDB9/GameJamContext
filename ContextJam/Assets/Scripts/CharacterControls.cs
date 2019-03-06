@@ -89,9 +89,9 @@ public class CharacterControls : MonoBehaviour
         }
 
         // Open booklet.
-        if (Input.GetKeyDown("q")) 
+        if (Input.GetKeyDown("q"))
         {
-            if(!_booklet.activeInHierarchy)
+            if (!_booklet.activeInHierarchy)
             {
                 _booklet.SetActive(true);
             }
@@ -138,21 +138,29 @@ public class CharacterControls : MonoBehaviour
         else speed = walkSpeed;
 
         // If the player looks at a gate, change the scene.
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, 
+        if (Physics.Raycast(transform.position,
                             transform.TransformDirection(Vector3.forward),
-                            out hit, Mathf.Infinity)) {
+                            out RaycastHit hit, Mathf.Infinity))
+        {
             if (hit.transform.CompareTag("Forest Gate"))
             {
-                SceneManager.LoadScene("Forest");
+                if (Input.GetButtonDown("e"))
+                {
+                    SceneManager.LoadScene("Forest");
+                }
             }
             else if (hit.transform.CompareTag("Lake Gate"))
             {
-                SceneManager.LoadScene("Lake");
+                if (Input.GetButtonDown("e"))
+                {
+                    SceneManager.LoadScene("Lake");
+                }
             }
             else if (hit.transform.CompareTag("Farm Gate"))
             {
-                SceneManager.LoadScene("Farm");
+                if (Input.GetButtonDown("e"))
+
+                    SceneManager.LoadScene("Farm");
             }
         }
     }
