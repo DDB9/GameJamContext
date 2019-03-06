@@ -137,30 +137,35 @@ public class CharacterControls : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
 
-        // If the player looks at a gate, change the scene.
-        if (Physics.Raycast(transform.position,
-                            transform.TransformDirection(Vector3.forward),
-                            out RaycastHit hit, Mathf.Infinity))
+        // If the player looks at a gate, change the scene
+        RaycastHit hitInfo;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hitInfo))
         {
-            if (hit.transform.CompareTag("Forest Gate"))
+            if (hitInfo.transform.CompareTag("Forest Gate"))
             {
-                if (Input.GetButtonDown("e"))
+                Debug.Log("Forest Gate");
+                if (Input.GetMouseButtonDown(0))
                 {
+                    Debug.Log("test");
                     SceneManager.LoadScene("Forest");
                 }
             }
-            else if (hit.transform.CompareTag("Lake Gate"))
+
+            if (hitInfo.transform.CompareTag("Lake Gate"))
             {
-                if (Input.GetButtonDown("e"))
+                if (Input.GetMouseButtonDown(0))
                 {
                     SceneManager.LoadScene("Lake");
                 }
             }
-            else if (hit.transform.CompareTag("Farm Gate"))
-            {
-                if (Input.GetButtonDown("e"))
 
+            if (hitInfo.transform.CompareTag("Farm Gate"))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
                     SceneManager.LoadScene("Farm");
+                }
             }
         }
     }
