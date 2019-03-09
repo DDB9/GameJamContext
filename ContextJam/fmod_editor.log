@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
 [LOG] AsyncManager::init                       : manager 00000000A5998C58 isAsync 0 updatePeriod 0.02
 =======
@@ -22,6 +23,10 @@
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
 [LOG] AsyncManager::init                       : manager 0x141ef8008 isAsync 0 updatePeriod 0.02
 >>>>>>> parent of 73d970b... Stamina-Starvation stuff
+=======
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x141ef8008 isAsync 0 updatePeriod 0.02
+>>>>>>> parent of d2d0085... farmgrid push en andere dingen die bij mij als changed kwamen maar niet vn mij zijn :alien:
 =======
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
 [LOG] AsyncManager::init                       : manager 0x141ef8008 isAsync 0 updatePeriod 0.02
