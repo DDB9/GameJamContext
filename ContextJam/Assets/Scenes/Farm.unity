@@ -42,6 +42,7 @@ RenderSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.36778277, g: 0.41671962, b: 0.42833677, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
@@ -49,6 +50,9 @@ RenderSettings:
 =======
   m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
 >>>>>>> parent of 73d970b... Stamina-Starvation stuff
+=======
+  m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
+>>>>>>> parent of d2d0085... farmgrid push en andere dingen die bij mij als changed kwamen maar niet vn mij zijn :alien:
 =======
   m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
 >>>>>>> parent of d2d0085... farmgrid push en andere dingen die bij mij als changed kwamen maar niet vn mij zijn :alien:
