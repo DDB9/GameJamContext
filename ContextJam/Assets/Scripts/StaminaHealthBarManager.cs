@@ -24,14 +24,6 @@ public class StaminaHealthBarManager : MonoBehaviour
     public float starvationGainModifier;
     public float starvationReductionModifier;
 
-    public float colorAlpha;
-
-    private RawImage gameOverScreen;
-    private Text gameOverText;
-    public GameObject gameOverScreenGO;
-    public GameObject gameOverTextGO;
-
-
     public enum playerStates
     {
         NORMAL,
@@ -53,9 +45,6 @@ public class StaminaHealthBarManager : MonoBehaviour
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
         starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
-        //gameOverScreen = GameObject.Find("GameOver").GetComponent<RawImage>();
-        //gameOverText = GameObject.Find("GameOverText").GetComponent<Text>();
-        
         
     }
 
@@ -64,10 +53,9 @@ public class StaminaHealthBarManager : MonoBehaviour
         staminaBar.transform.localScale = new Vector3(stamina / 100, staminaBar.transform.localScale.y, staminaBar.transform.localScale.z);
         hungerBar.transform.localScale = new Vector3(hunger / 100, hungerBar.transform.localScale.y, hungerBar.transform.localScale.z);
         starvationBar.transform.localScale = new Vector3(starvationTimer / 50, starvationBar.transform.localScale.y, starvationBar.transform.localScale.z);
-        
 
-
-        if (hunger > 25)
+       
+        if(hunger > 25)
         {
             
             staminaHungerRelation = 100 / hunger;
@@ -108,8 +96,6 @@ public class StaminaHealthBarManager : MonoBehaviour
         {
             starvationTimer = 50;
             Debug.Log("GAME OVER");
-            gameOverScreenGO.active = true;
-            
         }
 
         if (starvationTimer <= 0)
@@ -142,17 +128,5 @@ public class StaminaHealthBarManager : MonoBehaviour
 
     }   
 
-    /*IEnumerator GameOver(RawImage rawImage)
-    {
-        if (colorAlpha < 255)
-        {
-            colorAlpha += 1;
-            yield return new WaitForSeconds(2 / 255);
-        }
-        
-
-
-        yield return null;
-    }
-   */
+   
 }
