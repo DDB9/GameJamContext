@@ -11,6 +11,9 @@ TagManager:
   - Plot_Large
   - Inventory Slot
   - Occupied
+  - Forest Gate
+  - Lake Gate
+  - Farm Gate
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -88,9 +89,9 @@ public class CharacterControls : MonoBehaviour
         }
 
         // Open booklet.
-        if (Input.GetKeyDown("q")) 
+        if (Input.GetKeyDown("q"))
         {
-            if(!_booklet.activeInHierarchy)
+            if (!_booklet.activeInHierarchy)
             {
                 _booklet.SetActive(true);
             }
@@ -135,6 +136,38 @@ public class CharacterControls : MonoBehaviour
         // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
+
+        // If the player looks at a gate, change the scene
+        RaycastHit hitInfo;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hitInfo))
+        {
+            if (hitInfo.transform.CompareTag("Forest Gate"))
+            {
+                Debug.Log("Forest Gate");
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("test");
+                    SceneManager.LoadScene("Forest");
+                }
+            }
+
+            if (hitInfo.transform.CompareTag("Lake Gate"))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    SceneManager.LoadScene("Lake");
+                }
+            }
+
+            if (hitInfo.transform.CompareTag("Farm Gate"))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    SceneManager.LoadScene("Farm");
+                }
+            }
+        }
     }
 
     void OnCollisionStay()

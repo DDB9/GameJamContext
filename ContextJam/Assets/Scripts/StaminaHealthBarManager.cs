@@ -24,6 +24,9 @@ public class StaminaHealthBarManager : MonoBehaviour
     public float starvationGainModifier;
     public float starvationReductionModifier;
 
+    public GameObject gameOverScreen;
+
+
     public enum playerStates
     {
         NORMAL,
@@ -45,6 +48,7 @@ public class StaminaHealthBarManager : MonoBehaviour
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
         starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
+        gameOverScreen.active = false;
         
     }
 
@@ -96,6 +100,7 @@ public class StaminaHealthBarManager : MonoBehaviour
         {
             starvationTimer = 50;
             Debug.Log("GAME OVER");
+            gameOverScreen.active = true;
         }
 
         if (starvationTimer <= 0)
