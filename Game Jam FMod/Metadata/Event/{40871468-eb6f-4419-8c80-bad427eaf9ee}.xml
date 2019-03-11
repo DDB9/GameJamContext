@@ -5,7 +5,7 @@
             <value>pick up</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{dc4cbd9d-4a62-41ef-91fa-0896cf3d266e}</destination>
@@ -138,7 +138,6 @@
     <object class="MixerBusEffectChain" id="{bd4e2b3b-ed4c-4e66-a105-8c9abe60ec8e}">
         <relationship name="effects">
             <destination>{0de1f1c5-ce2d-48c3-83b0-f802466c4404}</destination>
-            <destination>{e693afb8-bdcf-49e1-ae11-d97bba220c90}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{d5c72466-3fe8-4360-8f1e-1c3e43221977}"/>
@@ -158,7 +157,6 @@
     </object>
     <object class="MixerBusPanner" id="{34257cfa-8955-44ee-9a32-a2bdebe8e6b4}"/>
     <object class="MixerBusFader" id="{0de1f1c5-ce2d-48c3-83b0-f802466c4404}"/>
-    <object class="SpatialiserEffect" id="{e693afb8-bdcf-49e1-ae11-d97bba220c90}"/>
     <object class="AutomationCurve" id="{b779892d-a50c-42ca-a660-d918637e2620}">
         <relationship name="parameter">
             <destination>{9f22f6ed-9de8-4a47-abb2-c31eec61c66a}</destination>
@@ -174,7 +172,7 @@
             <value>0.90073831009023797</value>
         </property>
         <property name="value">
-            <value>10</value>
+            <value>3</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{89ec4dae-db9d-437c-9b89-ddc72fc4df8d}">
@@ -182,7 +180,7 @@
             <value>0.029532403609515999</value>
         </property>
         <property name="value">
-            <value>-80</value>
+            <value>-7</value>
         </property>
     </object>
 </objects>
