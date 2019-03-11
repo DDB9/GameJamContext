@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8567989168969479208}
   m_Layer: 0
-  m_Name: Chestnut_Good
+  m_Name: Tree_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09b453298fa8b294ea7ced2a15b63fb5, type: 2}
+  - {fileID: 2100000, guid: e68341c0bf95ed543a97e2e71e0bf7ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -244,7 +244,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09b453298fa8b294ea7ced2a15b63fb5, type: 2}
+  - {fileID: 2100000, guid: e68341c0bf95ed543a97e2e71e0bf7ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
