@@ -592,6 +592,36 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[3]
       value: 
       objectReference: {fileID: 1780742947}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Event
+      value: event:/music_lake
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 0.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[1].Value
+      value: 0.754
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: TriggerOnce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[1].Name
+      value: lakevolume
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3451b47d4a44ab899306da9439c8ff, type: 3}
 --- !u!1001 &275922993
