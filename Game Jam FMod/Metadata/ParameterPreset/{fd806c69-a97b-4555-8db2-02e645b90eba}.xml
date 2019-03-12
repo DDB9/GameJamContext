@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{fd806c69-a97b-4555-8db2-02e645b90eba}">
+        <property name="name">
+            <value>lakevolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{853f543b-c905-4dbb-a3a0-2c6c84f21db0}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{853f543b-c905-4dbb-a3a0-2c6c84f21db0}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
