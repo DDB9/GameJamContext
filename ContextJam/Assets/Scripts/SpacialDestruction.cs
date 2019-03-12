@@ -5,13 +5,15 @@ using UnityEngine;
 public class SpacialDestruction : MonoBehaviour
 {
     public Inventory inventory;
-    void OnTriggerEnter(Collider other)
+    
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Occupied"))
         {
-            Transform parent = this.transform.parent;
+            var parent = this.transform.parent;
             IInventoryItem item = parent.GetComponent<IInventoryItem>();
 
+            Debug.Log(parent.name);
             if (item != null)
             {
                 inventory.AddItem(item);

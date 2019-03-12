@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 6b1fcd4bc0a04491ab342fc7a83ee47e
-=======
-guid: c56e84b63a438e84db1cc8762bc9ae6c
->>>>>>> 29bf1e368c47d050c03a6b349b0177a345c73e34
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -57,6 +53,7 @@ ModelImporter:
     4300010: Hooves
     4300012: Tail
     4300014: Body
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -109,8 +106,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -137,7 +134,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

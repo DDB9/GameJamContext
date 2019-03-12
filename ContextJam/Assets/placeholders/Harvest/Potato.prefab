@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &723723157
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &781855643
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &821942315
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &865511366
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1003487974
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1313997851
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1317043770
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1827023872
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec53aa91b79b8410885a8fbc24e17032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &1536380514303409923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7912128983667578666}
   - component: {fileID: 6121585515225797466}
+  - component: {fileID: 5308369881256738594}
   m_Layer: 0
   m_Name: Potato
   m_TagString: Occupied
@@ -1187,6 +1197,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27e19f34a5a900449e4030058a36c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5308369881256738594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459477956339189763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c420361f54b8b4d9f6347f1899cc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 0}
 --- !u!1 &6386423764049401355
 GameObject:
   m_ObjectHideFlags: 0

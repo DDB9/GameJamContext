@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: f42a8db62838b4ac3bab1db010b56b8e
-=======
-guid: cb91c58ef88ba5e49bc2b98baf15aab2
->>>>>>> 29bf1e368c47d050c03a6b349b0177a345c73e34
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -41,6 +37,7 @@ ModelImporter:
     4300004: Body
     4300006: Lips
     4300008: Fins
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -93,8 +90,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -121,7 +118,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
