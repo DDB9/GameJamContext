@@ -137,20 +137,29 @@ public class CharacterControls : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
 
+        // When player presses his left mouse button...
         if (Input.GetMouseButtonDown(0)) 
         {
             RaycastHit hitInfo;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             
+            // ... And he is looking at...
             if (Physics.Raycast(ray, out hitInfo))
             {
+                // ... Forest gate, then load Forest scene.
                 if (hitInfo.transform.CompareTag("Forest Gate"))
                 {
                     SceneManager.LoadScene("Forest");
                 }
+                // ... Lake gate, then load Lake scene.
                 else if (hitInfo.transform.CompareTag("Lake Gate"))
                 {
                     SceneManager.LoadScene("Lake");
+                }
+                // ... Farm gate, then load Farm scene.
+                else if (hitInfo.transform.CompareTag("Farm Gate"))
+                {
+                    SceneManager.LoadScene("Farm");
                 }
             }
         }
