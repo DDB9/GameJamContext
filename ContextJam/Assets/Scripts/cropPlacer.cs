@@ -12,7 +12,14 @@ public class cropPlacer : MonoBehaviour
     public GameObject tomato;
 
     public StaminaHealthBarManager hungerBarScript;
-    public float hungerRegain;
+    public float hungerRegainPotato;
+    public float hungerRegainTomato;
+    public float hungerRegainBerry;
+
+
+    public int tomatoCounter = 0;
+    public int potatoCounter = 0;
+    public int berryCounter = 0;
 
     public Image[] inventorySlots = new Image[4];
 
@@ -189,8 +196,8 @@ public class cropPlacer : MonoBehaviour
         {
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
-
-                hungerBarScript.hunger += hungerRegain;
+                BerryCount();
+                hungerBarScript.hunger += hungerRegainBerry;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(0);
@@ -198,7 +205,8 @@ public class cropPlacer : MonoBehaviour
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                PotatoCount();
+                hungerBarScript.hunger += hungerRegainPotato;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(0);
@@ -206,7 +214,8 @@ public class cropPlacer : MonoBehaviour
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                TomatoCount();
+                hungerBarScript.hunger += hungerRegainTomato;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(0);
@@ -217,8 +226,8 @@ public class cropPlacer : MonoBehaviour
         {
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
-
-                hungerBarScript.hunger += hungerRegain;
+                BerryCount();
+                hungerBarScript.hunger += hungerRegainBerry;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(1);
@@ -226,7 +235,8 @@ public class cropPlacer : MonoBehaviour
 
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                PotatoCount();
+                hungerBarScript.hunger += hungerRegainPotato;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(1);
@@ -234,7 +244,8 @@ public class cropPlacer : MonoBehaviour
 
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                TomatoCount();
+                hungerBarScript.hunger += hungerRegainTomato;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(1);
@@ -245,8 +256,8 @@ public class cropPlacer : MonoBehaviour
         {
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
-
-                hungerBarScript.hunger += hungerRegain;
+                BerryCount();
+                hungerBarScript.hunger += hungerRegainBerry;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(2);
@@ -254,7 +265,8 @@ public class cropPlacer : MonoBehaviour
 
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                PotatoCount();
+                hungerBarScript.hunger += hungerRegainPotato;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(2);
@@ -262,7 +274,8 @@ public class cropPlacer : MonoBehaviour
 
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                TomatoCount();
+                hungerBarScript.hunger += hungerRegainTomato;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(2);
@@ -273,8 +286,8 @@ public class cropPlacer : MonoBehaviour
         {
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
-
-                hungerBarScript.hunger += hungerRegain;
+                BerryCount();
+                hungerBarScript.hunger += hungerRegainBerry;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(3);
@@ -282,7 +295,8 @@ public class cropPlacer : MonoBehaviour
 
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                PotatoCount();
+                hungerBarScript.hunger += hungerRegainPotato;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(3);
@@ -290,7 +304,8 @@ public class cropPlacer : MonoBehaviour
 
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
-                hungerBarScript.hunger += hungerRegain;
+                TomatoCount();
+                hungerBarScript.hunger += hungerRegainTomato;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(3);
@@ -298,5 +313,30 @@ public class cropPlacer : MonoBehaviour
 
         }
 
+    }
+
+    void PotatoCount()
+    {
+        potatoCounter += 1;
+        if (tomatoCounter > 0) tomatoCounter -= 1;
+        else tomatoCounter = 0;
+        if (berryCounter > 0) berryCounter -= 1;
+        else berryCounter = 0;
+    }
+    void TomatoCount()
+    {
+        if (potatoCounter > 0) potatoCounter -= 1;
+        else potatoCounter = 0;
+        tomatoCounter += 1;
+        if (berryCounter > 0) berryCounter -= 1;
+        else berryCounter = 0;
+    }
+    void BerryCount()
+    {
+        if (potatoCounter > 0) potatoCounter -= 1;
+        else potatoCounter = 0;
+        if (tomatoCounter > 0) tomatoCounter -= 1;
+        else tomatoCounter = 0;
+        berryCounter += 1;
     }
 }
