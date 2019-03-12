@@ -148,6 +148,10 @@ public class CharacterControls : MonoBehaviour
                 {
                     SceneManager.LoadScene("Forest");
                 }
+                else if (hitInfo.transform.CompareTag("Lake Gate"))
+                {
+                    SceneManager.LoadScene("Lake");
+                }
             }
         }
     }

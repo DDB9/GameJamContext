@@ -7,7 +7,6 @@ public class HUD : MonoBehaviour
 {
     public GameObject player;
     public Inventory Inventory;
-    public GameObject farmOverlay;
     public GameObject invOverlay;
     public GameObject playerCam;
 
