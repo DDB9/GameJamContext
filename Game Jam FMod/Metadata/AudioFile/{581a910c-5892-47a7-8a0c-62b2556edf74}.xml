@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{581a910c-5892-47a7-8a0c-62b2556edf74}">
+        <property name="assetPath">
+            <value>Game Jam OST2 demo1.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>127.79630385487529</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{83c1cfb8-e9d0-484c-a524-14c7a4333a29}</destination>
+        </relationship>
+    </object>
+</objects>

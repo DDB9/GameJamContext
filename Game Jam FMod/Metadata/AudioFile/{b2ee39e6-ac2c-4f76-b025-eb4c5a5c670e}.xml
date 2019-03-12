@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{b2ee39e6-ac2c-4f76-b025-eb4c5a5c670e}">
+        <property name="assetPath">
+            <value>Male_Jump_Grunt07.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.49408163265306121</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{83c1cfb8-e9d0-484c-a524-14c7a4333a29}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{2191f984-bdad-407c-b48a-f1679f6e2c04}">
+        <property name="name">
+            <value>bucket2volume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{005bd8ab-4bc5-4e10-a0d9-b1d486d21a2c}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{005bd8ab-4bc5-4e10-a0d9-b1d486d21a2c}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

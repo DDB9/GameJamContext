@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{de8b8bd0-381e-4545-a5ae-7d555fb8fd53}">
+        <property name="assetPath">
+            <value>Foot_Plywood_HeelsJump1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.2989342403628118</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{83c1cfb8-e9d0-484c-a524-14c7a4333a29}</destination>
+        </relationship>
+    </object>
+</objects>

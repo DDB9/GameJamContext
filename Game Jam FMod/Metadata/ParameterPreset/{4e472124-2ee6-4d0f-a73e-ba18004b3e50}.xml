@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{4e472124-2ee6-4d0f-a73e-ba18004b3e50}">
+        <property name="name">
+            <value>dropbucketvolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{7eeefa9f-d3f1-43b9-88e4-b8f2002549b7}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{7eeefa9f-d3f1-43b9-88e4-b8f2002549b7}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

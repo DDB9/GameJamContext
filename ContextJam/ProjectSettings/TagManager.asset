@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickupable
+  - Interactable
+  - Plot_Small
+  - Plot_Medium
+  - Plot_Large
+  - Inventory Slot
+  - Occupied
+  - Forest Gate
+  - Lake Gate
+  - Farm Gate
   layers:
   - Default
   - TransparentFX

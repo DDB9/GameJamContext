@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 
-public class CharacterControls : MonoBehaviour {
+public class CharacterControls : MonoBehaviour
+{
+    public static CharacterControls instance = null;
 
     public float speed = 7.0f;
     public float gravity = 20.0f;
@@ -14,9 +17,12 @@ public class CharacterControls : MonoBehaviour {
     public float jumpHeight = 1.0f;
     public Inventory inventory;
     public GameObject _inventory;
-    public int currentSelected = 0;
+    public GameObject _booklet;
+    public bool inventoryActive;
 
-    public UnityEngine.UI.Button[] inventorySlots = new UnityEngine.UI.Button[4];
+    public static int currentSelected = 0;
+
+    public Image[] inventorySlots = new Image[4];
 
     private bool grounded = false;
     private float sprintSpeed;
@@ -24,9 +30,10 @@ public class CharacterControls : MonoBehaviour {
 
     void Awake()
     {
-        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play.
+        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play (if active).
+        if (_booklet.activeInHierarchy) _booklet.SetActive(false);      // Do the same for the booklet.
 
-        sprintSpeed = speed * 1.50f;
+        sprintSpeed = speed * 1.75f;
         GetComponent<Rigidbody>().freezeRotation = true;
         GetComponent<Rigidbody>().useGravity = false;
         walkSpeed = speed;
@@ -66,23 +73,38 @@ public class CharacterControls : MonoBehaviour {
 
     void Update()
     {
+        // Open inventory.
         if (Input.GetKeyDown("e"))
         {
             if (!_inventory.activeInHierarchy)
             {
-                Debug.Log("Open");
                 _inventory.SetActive(true);
+                inventoryActive = true;
             }
             else if (_inventory.activeInHierarchy)
             {
-                Debug.Log("Close");
                 _inventory.SetActive(false);
+                inventoryActive = false;
+            }
+        }
+
+        // Open booklet.
+        if (Input.GetKeyDown("q"))
+        {
+            if (!_booklet.activeInHierarchy)
+            {
+                _booklet.SetActive(true);
+            }
+            else if (_booklet.activeInHierarchy)
+            {
+                _booklet.SetActive(false);
             }
         }
 
         // Inventory Selection
         if (_inventory.activeInHierarchy)
         {
+            // Scrollwheel input.
             float d = Input.GetAxis("Mouse ScrollWheel");
             if (d > 0f)
             {
@@ -92,17 +114,46 @@ public class CharacterControls : MonoBehaviour {
             if (d < 0f)
             {
                 if (currentSelected <= inventorySlots.Length) currentSelected--;
-                if (currentSelected <= -inventorySlots.Length) currentSelected = 3;
+                if (currentSelected < 0) currentSelected = 3;
             }
+            // Keyboard input.
+            if (Input.GetKeyDown(KeyCode.Alpha1)) currentSelected = 0;
+            if (Input.GetKeyDown(KeyCode.Alpha2)) currentSelected = 1;
+            if (Input.GetKeyDown(KeyCode.Alpha3)) currentSelected = 2;
+            if (Input.GetKeyDown(KeyCode.Alpha4)) currentSelected = 3;
 
-            if (currentSelected == 0) inventorySlots[0].Select();
-            if (currentSelected == 1) inventorySlots[1].Select();
-            if (currentSelected == 2) inventorySlots[2].Select();
-            if (currentSelected == 3) inventorySlots[3].Select();
+            // Setting the slots active and inactive.
+            if (currentSelected == 0) inventorySlots[0].enabled = false;
+            else inventorySlots[0].enabled = true;
+            if (currentSelected == 1) inventorySlots[1].enabled = false;
+            else inventorySlots[1].enabled = true;
+            if (currentSelected == 2) inventorySlots[2].enabled = false;
+            else inventorySlots[2].enabled = true;
+            if (currentSelected == 3) inventorySlots[3].enabled = false;
+            else inventorySlots[3].enabled = true;
         }
 
+        // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
+
+        if (Input.GetMouseButtonDown(0)) 
+        {
+            RaycastHit hitInfo;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                if (hitInfo.transform.CompareTag("Forest Gate"))
+                {
+                    SceneManager.LoadScene("Forest");
+                }
+                else if (hitInfo.transform.CompareTag("Lake Gate"))
+                {
+                    SceneManager.LoadScene("Lake");
+                }
+            }
+        }
     }
 
     void OnCollisionStay()

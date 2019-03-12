@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{b41e55a5-6934-4bac-86be-de3793b3d23a}">
+        <property name="name">
+            <value>firevolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{4ca3614d-e970-404b-b5ab-cc8e7776b7fe}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{4ca3614d-e970-404b-b5ab-cc8e7776b7fe}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
