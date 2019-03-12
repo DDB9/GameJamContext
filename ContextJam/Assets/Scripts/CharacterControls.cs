@@ -177,7 +177,7 @@ public class CharacterControls : MonoBehaviour
         return Mathf.Sqrt(2 * jumpHeight * gravity);
     }
 
-    private void OnCollisionEnter(Collision hit)
+    /*private void OnCollisionEnter(Collision hit)
     {
         if (hit.collider.tag == "Pickupable")
         {
@@ -188,4 +188,5 @@ public class CharacterControls : MonoBehaviour
             }
         }
     }
+    */
 }
