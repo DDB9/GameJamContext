@@ -1,6 +1,7 @@
 [LOG] System::create                           : Header version = 1.10.10. Current version = 1.10.10.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=11010 (98815), maxchannels=256, flags=0x00020000
+<<<<<<< HEAD
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
 [LOG] OutputCoreAudio::enumerate               : Enumerating...
 [LOG] OutputCoreAudio::enumerate               : Found output driver: "Built-in Output".
@@ -11,6 +12,15 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
 [LOG] AsyncManager::init                       : manager 0x1839c0408 isAsync 0 updatePeriod 0.02
+=======
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0000000069941AF8 isAsync 0 updatePeriod 0.02
+>>>>>>> 29bf1e368c47d050c03a6b349b0177a345c73e34
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,12 +28,170 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+<<<<<<< HEAD
 [LOG] SoundI::release                          : Forest_Day (0x162c6aa28)
 [LOG] SoundI::release                          :     Forest_Day (0x15fac5d88)
 [LOG] SoundI::release                          :     Forest_Day (0x15cd8fe08)
 [LOG] SoundI::release                          : TheBarnOST2_lake_v3 (0x162c69018)
 [LOG] SoundI::release                          :     TheBarnOST2_lake_v3 (0x15cebe528)
 [LOG] SoundI::release                          :     TheBarnOST2_lake_v3 (0x15ce144b8)
+=======
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000C1E7F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB1B491100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB1B4910D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB1B4911D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB1B491290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005504A618
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump4', format=2, channels=1, frequency=48000, lengthbytes=2624, lengthpcm=12359, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.229767.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000C1E7F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB1B491100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB1B4910D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB1B4911D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB1B491290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005504A618
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump1', format=2, channels=1, frequency=48000, lengthbytes=3936, lengthpcm=17387, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.274261.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000C1E7F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB1B491100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB1B4910D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB1B4911D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB1B491290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005504A618
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump3', format=2, channels=1, frequency=48000, lengthbytes=2784, lengthpcm=12066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.276733.
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000007E0F2CE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000007E0F2CE8
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000C1E7F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB1B491100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB1B4910D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB1B4911D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB1B491290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007D978F28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='foley_object_grab_pickup_04', format=2, channels=2, frequency=48000, lengthbytes=6592, lengthpcm=26066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944032.
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000007E0F2988 : node = 000000003BC3AD80
+[LOG] SystemI::createSound                     : add node to async list : head = 000000007D8E6FD8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000007E0F2988
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000003BC3AE98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000007E0F2988
+[LOG] SoundI::getSubSound                      : sound 000000007E0F2988.  Subsound index 0 / 1
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (0000000042748468)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000780E4078)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000007E0F2CE8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006CF95988 : node = 00000000123A2AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000007D8E6FD8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006CF95988
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000123A2BC8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006CF95988
+[LOG] SoundI::getSubSound                      : sound 000000006CF95988.  Subsound index 0 / 1
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (000000007E0F2988)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000003B4D2558)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000004102EBE8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000042748B28 : node = 00000000123A2D50
+[LOG] SystemI::createSound                     : add node to async list : head = 000000007D8E6FD8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000042748B28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5809888
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 37536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000123A2E68
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000042748B28
+[LOG] SoundI::getSubSound                      : sound 0000000042748B28.  Subsound index 0 / 1
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (000000006CF95988)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000780E4558)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000007E0F27D8)
+[LOG] SoundI::release                          : Forest_Day (0000000042749398)
+[LOG] SoundI::release                          :     Forest_Day (00000000780E43B8)
+[LOG] SoundI::release                          :     Forest_Day (000000007E0F22C8)
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (0000000042748B28)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000007D8E5968)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (0000000042748CD8)
+[LOG] SoundI::release                          : TheBarnOST2_farm_v3 (00000000427487C8)
+[LOG] SoundI::release                          :     TheBarnOST2_farm_v3 (0000000042BE2C48)
+[LOG] SoundI::release                          :     TheBarnOST2_farm_v3 (000000007E0F2118)
+[LOG] SoundI::release                          :  (000000003B05B1D8)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump1 (000000007D8E5CA8)
+[LOG] SoundI::release                          :  (000000003B05B798)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump3 (000000007D8E57C8)
+[LOG] SoundI::release                          :  (000000003B05B068)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump4 (000000007D8E4928)
+[LOG] SoundI::release                          :  (0000000023747C08)
+[LOG] SoundI::release                          :     foley_object_grab_pickup_04 (00000000413E7588)
+>>>>>>> 29bf1e368c47d050c03a6b349b0177a345c73e34
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -34,6 +202,10 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+<<<<<<< HEAD
+=======
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+>>>>>>> 29bf1e368c47d050c03a6b349b0177a345c73e34
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)

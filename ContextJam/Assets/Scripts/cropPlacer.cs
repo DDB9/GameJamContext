@@ -63,15 +63,6 @@ public class cropPlacer : MonoBehaviour
         {
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
-                Collider[] hitColliders = Physics.OverlapBox(finalPosition, Vector3.one, Quaternion.identity);
-                foreach (Collider col in hitColliders)
-                {
-                    if (col.tag == "Border" || col.tag == "Pickupable")
-                    {
-                        Debug.Log("Collision detected!");
-                    }
-                }
-
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
+  m_IndirectSpecularColor: {r: 0.36778456, g: 0.41672093, b: 0.42833576, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2399,6 +2399,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 650674959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &710813340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5811007318119490435, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+    type: 3}
+  m_PrefabInstance: {fileID: 5811007318877830745}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75aa22f9d7e33634c971fe70fda8af69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &764077119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2994,6 +3006,64 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1086340377}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1159460862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159460863}
+  - component: {fileID: 1159460865}
+  - component: {fileID: 1159460864}
+  m_Layer: 0
+  m_Name: PickupCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159460863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159460862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.834, z: 0}
+  m_LocalScale: {x: 1.0096201, y: 1.0096201, z: 1.0096201}
+  m_Children: []
+  m_Father: {fileID: 2232847281905030387}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159460864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159460862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b782c3078e0a4da74e9d788dce33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 454645405}
+--- !u!135 &1159460865
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159460862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1178879775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4085,8 +4155,8 @@ MonoBehaviour:
     type: 3}
   potato: {fileID: 3459477956339189763, guid: 1a6ac3f5293cb2244a5bf1efb8fe6fbc, type: 3}
   tomato: {fileID: 3459477956339189763, guid: 6c6efcd34a174e848814dcc4d1d800e6, type: 3}
-  hungerBarScript: {fileID: 0}
-  hungerRegain: 0
+  hungerBarScript: {fileID: 710813340}
+  hungerRegain: 20
   inventorySlots:
   - {fileID: 393453466}
   - {fileID: 910946499}
@@ -5093,6 +5163,12 @@ PrefabInstance:
       objectReference: {fileID: 1861789945}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3451b47d4a44ab899306da9439c8ff, type: 3}
+--- !u!4 &2232847281905030387 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2232847280831750827, guid: 2f3451b47d4a44ab899306da9439c8ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 2232847281905030386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5495587481376120469
 PrefabInstance:
   m_ObjectHideFlags: 0
