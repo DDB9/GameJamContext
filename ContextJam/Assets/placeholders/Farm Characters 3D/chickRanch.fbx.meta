@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bf5c162b04806455c8e1eba9e6a6cfc8
+=======
+guid: fa2bf83bbea924765b302a37e36921c3
+>>>>>>> f13df1b502cec415ac872c56e50f3ace8bcc76a3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -85,6 +89,10 @@ ModelImporter:
     4300018: Wings
     4300020: polySurface2
     4300022: pasted__polySurface3
+<<<<<<< HEAD
+=======
+    9500000: //RootNode
+>>>>>>> f13df1b502cec415ac872c56e50f3ace8bcc76a3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -137,8 +145,13 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+<<<<<<< HEAD
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
+=======
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+>>>>>>> f13df1b502cec415ac872c56e50f3ace8bcc76a3
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -165,7 +178,11 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 0
+=======
+  animationType: 2
+>>>>>>> f13df1b502cec415ac872c56e50f3ace8bcc76a3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
