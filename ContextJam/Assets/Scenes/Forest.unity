@@ -4381,7 +4381,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 2e584dc3314387f44b2ac88029ccbab4, type: 3}
       propertyPath: m_Name
-      value: hekdeurfarm_exit
+      value: Farm Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e584dc3314387f44b2ac88029ccbab4, type: 3}
+      propertyPath: m_TagString
+      value: Farm Gate
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2e584dc3314387f44b2ac88029ccbab4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4433,6 +4437,26 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fa9cc865302484119a95db913b1aaa82, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e584dc3314387f44b2ac88029ccbab4, type: 3}
+--- !u!1 &1047651772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 2e584dc3314387f44b2ac88029ccbab4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047651771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1047651773
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047651772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 2e584dc3314387f44b2ac88029ccbab4, type: 3}
 --- !u!1001 &1048702693
 PrefabInstance:
   m_ObjectHideFlags: 0
