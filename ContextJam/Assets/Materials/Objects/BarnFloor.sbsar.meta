@@ -24,9 +24,12 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://Hay\" label=\"\" >\n  <presetinput identifier=\"$outputsize\"
       uid=\"3665480780\" type=\"8\" value=\"9,9\" />\n  <presetinput identifier=\"HayAmount\"
-      uid=\"2842132523\" type=\"4\" value=\"43\" />\n  <presetinput identifier=\"HayVariation\"
-      uid=\"2841757356\" type=\"1\" value=\"0.429,0.157\" />\n  <presetinput identifier=\"HayColour\"
-      uid=\"2842136329\" type=\"3\" value=\"1,0.746553,0,1\" />\n </sbspreset>\n"
+      uid=\"2842132523\" type=\"4\" value=\"23\" />\n  <presetinput identifier=\"HayVariation\"
+      uid=\"2841757356\" type=\"1\" value=\"0,0.181\" />\n  <presetinput identifier=\"HayColour\"
+      uid=\"2842136329\" type=\"3\" value=\"1,0.746553,0,1\" />\n  <presetinput identifier=\"HaySaturation\"
+      uid=\"2842136240\" type=\"0\" value=\"0.696\" />\n  <presetinput identifier=\"HayLightness\"
+      uid=\"2841739753\" type=\"0\" value=\"0.513\" />\n  <presetinput identifier=\"DirtColour\"
+      uid=\"2841763763\" type=\"3\" value=\"0.59434,0.513491,0.221476,1\" />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: diffuse,normal,height,metallic,ambientOcclusion
     texturePackingList:
