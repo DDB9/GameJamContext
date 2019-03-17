@@ -2,45 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blueberry : MonoBehaviour, IInventoryItem 
-{
-    public string Name
+public class Spear : MonoBehaviour, IInventoryItem {
+
+    public string Name 
     {
-        get
+        get 
         {
-            return "Blueberry";
+            return "Spear";
         }
     }
 
     public Sprite _Image = null;
-    public Sprite Image
+    public Sprite Image 
     {
-        get
+        get 
         {
             return _Image;
         }
     }
-    public void OnPickup()
+
+    public void OnPickup() 
     {
         gameObject.SetActive(false);
     }
 
-    public void OnDrop()
+    public void OnDrop() 
     {
         RaycastHit hit = new RaycastHit();
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 1000))
+        if (Physics.Raycast(ray, out hit, 1000)) 
         {
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;
-        }
-    }
-
-    public void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Pickupable") 
-        {
-            Destroy(other);
         }
     }
 }
