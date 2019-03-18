@@ -41,21 +41,6 @@ public class CharacterControls : MonoBehaviour
         GetComponent<Rigidbody>().freezeRotation = true;
         GetComponent<Rigidbody>().useGravity = false;
         walkSpeed = speed;
-        
-        if (GameObject.Find("BBInfoPanel") != null)
-            blueberryInfo = GameObject.Find("BBInfoPanel").GetComponent<Image>();
-        else 
-            return;
-
-        if (GameObject.Find("PTTInfoPanel") != null)
-            potatoInfo = GameObject.Find("PTTInfoPanel").GetComponent<Image>();
-        else
-            return;
-
-        if (GameObject.Find("TMTInfoPanel") != null)
-            tomatoInfo = GameObject.Find("TMTInfoPanel").GetComponent<Image>();
-        else
-            return;
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -217,33 +202,41 @@ public class CharacterControls : MonoBehaviour
             }
         }
         
-        if (tomatoInfo != null || potatoInfo != null || blueberryInfo != null){
-            RaycastHit hit;
-            Debug.DrawRay(transform.position, camera.transform.forward, Color.green);
-            // Constantly checks if the player is looking at a pickupable.
-            if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) 
+        RaycastHit hit;
+        Debug.DrawRay(transform.position, camera.transform.forward, Color.green);
+        // Constantly checks if the player is looking at a pickupable.
+        if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) 
+        {
+            if (hit.transform.name == "Tomato") 
             {
-                if (hit.transform.name == "Tomato")
-                {
-                    tomatoInfo.enabled = true;  // Enabled the info panel.
-                }
-                else if (hit.transform.name == "Potato") 
-                {
-                    potatoInfo.enabled = true;  // Enabled the info panel.
-                }
-                else if (hit.transform.name == "Blueberry") 
-                {
-                    blueberryInfo.enabled = true;   // Enabled the info panel.
-                }
-                else 
-                {
-                    tomatoInfo.enabled = false;     // Otherwise the panels are disabled to prevent littering.
-                    potatoInfo.enabled = false;
-                    blueberryInfo.enabled = false;
-                }
+                tomatoInfo = GameObject.Find("TMTInfoPanel").GetComponent<Image>();
+                tomatoInfo.enabled = true;  // Enabled the info panel.
+            }
+            else if (tomatoInfo != null)
+            {
+                tomatoInfo.enabled = false;     // Otherwise the panels are disabled to prevent littering.
+            }
+            if (hit.transform.name == "Potato") 
+            {
+                potatoInfo = GameObject.Find("PTTInfoPanel").GetComponent<Image>();
+                potatoInfo.enabled = true;  // Enabled the info panel.
+            }
+            else if (potatoInfo != null)
+            {
+                potatoInfo.enabled = false;
+            }
+            if (hit.transform.name == "Blueberry") 
+            {
+                blueberryInfo = GameObject.Find("BBInfoPanel").GetComponent<Image>();
+                blueberryInfo.enabled = true;   // Enabled the info panel.
+            }
+            else if (blueberryInfo != null) 
+            {
+                blueberryInfo.enabled = false;
             }
         }
     }
+ 
 
     void OnCollisionStay()
     {
