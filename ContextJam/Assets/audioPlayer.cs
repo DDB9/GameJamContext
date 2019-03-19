@@ -29,7 +29,7 @@ public class audioPlayer : MonoBehaviour
     void Update()
     {
         Volume.setValue(1);
-        if (Stahea.hunger > 200){
+        if (Stahea.hunger < 30){
             Spanning.setValue(1);
         }
         else {
