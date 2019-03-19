@@ -59,10 +59,10 @@ public class StaminaHealthBarManager : MonoBehaviour
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
         starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
-        gameOverScreen.setActive(false);
+        gameOverScreen.active = false;
 
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(Music, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        Music.start();
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(Music, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        //Music.start();
     }
 
     private void Update()
