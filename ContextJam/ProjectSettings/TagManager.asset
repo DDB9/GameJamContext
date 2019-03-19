@@ -14,6 +14,7 @@ TagManager:
   - Forest Gate
   - Lake Gate
   - Farm Gate
+  - Fish
   layers:
   - Default
   - TransparentFX

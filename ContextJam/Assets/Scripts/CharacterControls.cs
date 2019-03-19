@@ -20,6 +20,8 @@ public class CharacterControls : MonoBehaviour
     public GameObject _booklet;
     public bool inventoryActive;
 
+    public Camera camera;
+
     public static int currentSelected = 0;
 
     public Image[] inventorySlots = new Image[4];
@@ -27,6 +29,8 @@ public class CharacterControls : MonoBehaviour
     private bool grounded = false;
     private float sprintSpeed;
     private float walkSpeed;
+
+    private Image blueberryInfo, potatoInfo, tomatoInfo;
 
     void Awake()
     {
@@ -162,8 +166,77 @@ public class CharacterControls : MonoBehaviour
                     SceneManager.LoadScene("Farm");
                 }
             }
+
+            var firstInventorySlot = inventorySlots[0].transform.GetChild(0);
+            var secondInventorySlot = inventorySlots[1].transform.GetChild(0);
+            var thirdInventorySlot = inventorySlots[2].transform.GetChild(0);
+            var fourthInventorySlot = inventorySlots[3].transform.GetChild(0);
+
+            if (currentSelected == 0 && firstInventorySlot.GetComponent<Image>().sprite.name == "spear") 
+            {
+                if (hitInfo.transform.CompareTag("Fish")) 
+                {
+                    Destroy(hitInfo.transform.GetComponent<GameObject>());
+                }
+            }
+            if (currentSelected == 1 && secondInventorySlot.GetComponent<Image>().sprite.name == "spear") 
+            {
+                if (hitInfo.transform.CompareTag("Fish")) 
+                {
+                    Destroy(hitInfo.transform.GetComponent<GameObject>());
+                }
+            }
+            if (currentSelected == 2 && thirdInventorySlot.GetComponent<Image>().sprite.name == "spear") 
+            {
+                if (hitInfo.transform.CompareTag("Fish")) 
+                {
+                    Destroy(hitInfo.transform.GetComponent<GameObject>());
+                }
+            }
+            if (currentSelected == 3 && fourthInventorySlot.GetComponent<Image>().sprite.name == "spear") 
+            {
+                if (hitInfo.transform.CompareTag("Fish")) 
+                {
+                    Destroy(hitInfo.transform.GetComponent<GameObject>());
+                }
+            }
+        }
+        
+        RaycastHit hit;
+        Debug.DrawRay(transform.position, camera.transform.forward, Color.green);
+        // Constantly checks if the player is looking at a pickupable.
+        if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) 
+        {
+            if (hit.transform.name == "Tomato") 
+            {
+                tomatoInfo = GameObject.Find("TMTInfoPanel").GetComponent<Image>();
+                tomatoInfo.enabled = true;  // Enabled the info panel.
+            }
+            else if (tomatoInfo != null)
+            {
+                tomatoInfo.enabled = false;     // Otherwise the panels are disabled to prevent littering.
+            }
+            if (hit.transform.name == "Potato") 
+            {
+                potatoInfo = GameObject.Find("PTTInfoPanel").GetComponent<Image>();
+                potatoInfo.enabled = true;  // Enabled the info panel.
+            }
+            else if (potatoInfo != null)
+            {
+                potatoInfo.enabled = false;
+            }
+            if (hit.transform.name == "Blueberry") 
+            {
+                blueberryInfo = GameObject.Find("BBInfoPanel").GetComponent<Image>();
+                blueberryInfo.enabled = true;   // Enabled the info panel.
+            }
+            else if (blueberryInfo != null) 
+            {
+                blueberryInfo.enabled = false;
+            }
         }
     }
+ 
 
     void OnCollisionStay()
     {
@@ -177,7 +250,7 @@ public class CharacterControls : MonoBehaviour
         return Mathf.Sqrt(2 * jumpHeight * gravity);
     }
 
-    private void OnCollisionEnter(Collision hit)
+    private void OnCollisionEnter(Collision hit) // aAA don't comment this out it really scared me when stuff stopped working...!
     {
         if (hit.collider.tag == "Pickupable")
         {
@@ -188,4 +261,5 @@ public class CharacterControls : MonoBehaviour
             }
         }
     }
+    
 }

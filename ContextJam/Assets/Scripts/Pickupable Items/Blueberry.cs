@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blueberry : MonoBehaviour, IInventoryItem {
+public class Blueberry : MonoBehaviour, IInventoryItem 
+{
     public string Name
     {
         get
@@ -32,6 +33,14 @@ public class Blueberry : MonoBehaviour, IInventoryItem {
         {
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Pickupable") 
+        {
+            Destroy(other);
         }
     }
 }

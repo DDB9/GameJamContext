@@ -11,6 +11,8 @@ public class cropPlacer : MonoBehaviour
     public GameObject potato;
     public GameObject tomato;
 
+    public Inventory inventory;
+
     public StaminaHealthBarManager hungerBarScript;
     public float hungerRegain;
 
@@ -61,21 +63,12 @@ public class cropPlacer : MonoBehaviour
         // Checks what item is in the currently selected slot.
         if (CharacterControls.currentSelected == 0)
         {
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
+            if (firstInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
             {
-                Collider[] hitColliders = Physics.OverlapBox(finalPosition, Vector3.one, Quaternion.identity);
-                foreach (Collider col in hitColliders)
-                {
-                    if (col.tag == "Border" || col.tag == "Pickupable")
-                    {
-                        Debug.Log("Collision detected!");
-                    }
-                }
-
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                Inventory.mItems.RemoveAt(0);   // Really gotta fix this, this doesn't work at all.
             }
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
