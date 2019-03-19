@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CropGrowth : MonoBehaviour
 {
+
+    public float colliderDestroyTime = 10f;
+    
     void Start() {
         // if (!hasRun) {
             StartCoroutine("Grow");
@@ -25,6 +28,14 @@ public class CropGrowth : MonoBehaviour
 
         this.transform.GetChild(2).gameObject.SetActive(false);
         this.transform.GetChild(3).gameObject.SetActive(true);
+
+        //this will destroy the red colliders on the farm, but WON'T destroy the game object itself (because otherwise the veggies will die after that time). 
+        //ff dirty gedaan, fixen we later wel
+        yield return new WaitForSeconds(colliderDestroyTime);
+
+        
+        
+
 
         // hasRun = true;
     }

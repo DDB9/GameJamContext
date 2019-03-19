@@ -32,27 +32,22 @@ public class StaminaHealthBarManager : MonoBehaviour
     private bool tutorialStarvation = false;
 
 
+
     public enum playerStates
     {
         NORMAL,
         STARVING,
     }
     playerStates State = playerStates.NORMAL;
+    
+
+    
 
 
-    FMOD.Studio.EventInstance Music;
-    FMOD.Studio.ParameterInstance Volume;
-    FMOD.Studio.ParameterInstance Spanning;
+    
+    
 
-
-    void Awake()
-    {
-        Music = FMODUnity.RuntimeManager.CreateInstance("event:/music");
-        Music.getParameter("Volume", out Volume);
-        Music.getParameter("Spanning", out Spanning);
-
-    }
-
+    
 
     private void Start()
     {
@@ -60,9 +55,13 @@ public class StaminaHealthBarManager : MonoBehaviour
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
         starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
         gameOverScreen.active = false;
+<<<<<<< HEAD
 
         //FMODUnity.RuntimeManager.AttachInstanceToGameObject(Music, GetComponent<Transform>(), GetComponent<Rigidbody>());
         //Music.start();
+=======
+        
+>>>>>>> a0aa073255a651223b4f78a9c155913461e476a8
     }
 
     private void Update()
@@ -71,21 +70,18 @@ public class StaminaHealthBarManager : MonoBehaviour
         hungerBar.transform.localScale = new Vector3(hunger / 100, hungerBar.transform.localScale.y, hungerBar.transform.localScale.z);
         starvationBar.transform.localScale = new Vector3(starvationTimer / 50, starvationBar.transform.localScale.y, starvationBar.transform.localScale.z);
 
-        Volume.setValue(1);
-
        
         if(hunger > 25)
         {
-            Spanning.setValue(1);
+            
             staminaHungerRelation = 100 / hunger;
             State = playerStates.NORMAL;
-
+            
         }
         else
         {
             staminaHungerRelation = 4;
             State = playerStates.STARVING;
-            Spanning.setValue(0);
         }
 
         if(hunger > 0)
@@ -138,7 +134,6 @@ public class StaminaHealthBarManager : MonoBehaviour
             case playerStates.STARVING:
                 if(starvationTimer < 50)
                 {
-
                     starvationTimer += Time.deltaTime * starvationGainModifier;
                     if (!tutorialStarvation)
                     {
