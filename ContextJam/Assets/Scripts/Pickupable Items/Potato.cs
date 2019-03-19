@@ -23,6 +23,8 @@ public class Potato : MonoBehaviour, IInventoryItem
     public void OnPickup()
     {
         gameObject.SetActive(false);
+
+        
     }
 
     public void OnDrop()
@@ -45,4 +47,6 @@ public class Potato : MonoBehaviour, IInventoryItem
             Destroy(other);
         }
     }
+
+   
 }
