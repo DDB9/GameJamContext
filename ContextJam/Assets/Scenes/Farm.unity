@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36778456, g: 0.41672093, b: 0.42833576, a: 1}
+  m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11705,6 +11705,26 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[3]
       value: 
       objectReference: {fileID: 1861789945}
+    - target: {fileID: 2232847280831750825, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750825, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750825, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Event
+      value: event:/forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Event
+      value: event:/music
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3451b47d4a44ab899306da9439c8ff, type: 3}
 --- !u!4 &2232847281905030387 stripped

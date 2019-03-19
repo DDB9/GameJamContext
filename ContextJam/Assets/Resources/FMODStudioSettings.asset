@@ -18,7 +18,7 @@ MonoBehaviour:
     Jam FMod.fspro
   SourceProjectPathUnformatted: /Users/stijn/Documents/GitHub/GameJamContext/Game
     Jam FMod/Game Jam FMod.fspro
-  SourceBankPathUnformatted: Assets/fmodbuilds
+  SourceBankPathUnformatted: assets/fmodbuilds
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -62,7 +62,6 @@ MonoBehaviour:
     Value: 32
   Plugins: []
   MasterBanks:
-  - Master Bank
   - Master Bank
   Banks:
   - bank2
