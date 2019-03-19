@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36778456, g: 0.41672093, b: 0.42833576, a: 1}
+  m_IndirectSpecularColor: {r: 0.36778277, g: 0.41671962, b: 0.42833677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4795,11 +4795,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 717242757113441007, guid: e36a1a50258b165458f7c36a4134aabd,
-        type: 3}
-      propertyPath: m_Name
-      value: Tomato
-      objectReference: {fileID: 0}
     - target: {fileID: 717242757112952527, guid: e36a1a50258b165458f7c36a4134aabd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4854,6 +4849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 717242757113441007, guid: e36a1a50258b165458f7c36a4134aabd,
+        type: 3}
+      propertyPath: m_Name
+      value: Tomato
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36a1a50258b165458f7c36a4134aabd, type: 3}
@@ -13573,6 +13573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811007318119490435, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+        type: 3}
+      propertyPath: stamina
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 5811007318119490489, guid: b5c208cb6070a4492b5e3edaf3dcd103,
         type: 3}
