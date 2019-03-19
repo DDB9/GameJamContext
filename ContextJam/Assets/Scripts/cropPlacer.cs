@@ -63,7 +63,7 @@ public class cropPlacer : MonoBehaviour
         // Checks what item is in the currently selected slot.
         if (CharacterControls.currentSelected == 0)
         {
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "Blueberry-Sprite")
+            if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
