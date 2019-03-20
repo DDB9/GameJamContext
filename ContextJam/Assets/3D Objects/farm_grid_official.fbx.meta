@@ -11,6 +11,7 @@ ModelImporter:
     400004: Grid.001
     2100000: farm-grid
     2100002: diepte
+    2100004: grid
     2300000: //RootNode
     2300002: Grid
     2300004: Grid.001
@@ -19,7 +20,17 @@ ModelImporter:
     3300004: Grid.001
     4300000: Grid
     4300002: Grid.001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: diepte
+    second: {fileID: 2100000, guid: 450fba1fabc16b147847998665b37ccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grid
+    second: {fileID: 2100000, guid: 8a1ad9bc73a9d564db642733f9abd423, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
