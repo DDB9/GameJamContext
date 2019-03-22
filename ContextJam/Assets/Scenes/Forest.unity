@@ -844,7 +844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bff7fd8152784339b87d1423f737cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &185076815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,7 +1423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226704561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.606895, y: 1.6994343, z: 41.28403}
+  m_LocalPosition: {x: 42.606895, y: 2.5, z: 41.28403}
   m_LocalScale: {x: 1.4205729, y: 1.4205729, z: 1.4205729}
   m_Children:
   - {fileID: 1032864291}
@@ -2578,7 +2577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &340713606
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4235,7 +4234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &558907039
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4281,7 +4280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &561231896
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5052,7 +5051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &647228132
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6053,7 +6052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &753570848
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6857,15 +6856,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
@@ -10450,15 +10449,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
@@ -10563,7 +10562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &1363099104
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10853,7 +10852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &1401266397
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11758,15 +11757,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
@@ -14883,15 +14882,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e, type: 3}
@@ -16191,7 +16190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364043493fcc5bb41902cf7483304543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 0.5
 --- !u!135 &2137686971
 SphereCollider:
   m_ObjectHideFlags: 0

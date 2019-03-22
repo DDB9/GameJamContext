@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour {
 
-    public GameObject player;
+    GameObject player;
     
+    void Start()
+    {
+        player = GameObject.Find("Player");
+    }
+
     // Update is called once per frame
-    void Update() {
+    void Update() 
+    {
         this.transform.LookAt(player.transform);
     }
 }
