@@ -18,6 +18,8 @@ public class STPlayer : MonoBehaviour
         OST.getParameter("fullspanning", out fullspanning);
         OST.getParameter("fullvolume", out fullvolume);
         OST.getParameter("currentscene", out currentscene);
+        currentscene.setValue(1);
+
     }
 
 

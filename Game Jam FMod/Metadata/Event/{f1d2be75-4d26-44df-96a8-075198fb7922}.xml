@@ -5,7 +5,7 @@
             <value>foosteps</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="folder">
             <destination>{dc4cbd9d-4a62-41ef-91fa-0896cf3d266e}</destination>
@@ -146,8 +146,8 @@
     </object>
     <object class="MixerBusEffectChain" id="{3e882353-3534-41c9-9af9-00fd79c3f0a5}">
         <relationship name="effects">
+            <destination>{9eed90e6-e4d3-4467-b6d4-0b88900720ec}</destination>
             <destination>{74f82af6-665b-44a8-9c73-eeec61e97d65}</destination>
-            <destination>{bf65a563-3c3b-4ae8-9795-78b99bc82e31}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{20593243-984e-4487-b3ce-a53ea0343809}">
@@ -204,8 +204,15 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{93e5667c-c0cd-4db5-84e3-9b7dae22fa0c}"/>
+    <object class="ThreeEQEffect" id="{9eed90e6-e4d3-4467-b6d4-0b88900720ec}">
+        <property name="lowGain">
+            <value>10</value>
+        </property>
+        <property name="highGain">
+            <value>-2</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{74f82af6-665b-44a8-9c73-eeec61e97d65}"/>
-    <object class="SpatialiserEffect" id="{bf65a563-3c3b-4ae8-9795-78b99bc82e31}"/>
     <object class="AutomationCurve" id="{b625d165-6835-40a1-ba10-1add5849faf6}">
         <relationship name="parameter">
             <destination>{606014ae-41c2-45b0-991f-11f3995318eb}</destination>
@@ -221,7 +228,7 @@
             <value>0.21244925575101489</value>
         </property>
         <property name="value">
-            <value>-0.5</value>
+            <value>-6.5</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{262a961a-a64d-440f-896c-90208d36a8f5}">
@@ -229,7 +236,7 @@
             <value>0.012178619756427606</value>
         </property>
         <property name="value">
-            <value>-10.5</value>
+            <value>-16.5</value>
         </property>
     </object>
 </objects>
