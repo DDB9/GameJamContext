@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{39591bab-2b0c-4557-9fe7-38f6ac57c931}">
+        <property name="name">
+            <value>fullspanning</value>
+        </property>
+        <relationship name="folder">
+            <destination>{2d558487-245f-48f1-8470-a3c7356e7cee}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{445f5de5-ac84-4f7d-8cf0-485c3f38168e}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{445f5de5-ac84-4f7d-8cf0-485c3f38168e}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

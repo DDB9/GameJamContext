@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3677832, g: 0.41671973, b: 0.4283353, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16067,6 +16067,7 @@ GameObject:
   - component: {fileID: 2131993697}
   - component: {fileID: 2131993696}
   - component: {fileID: 2131993695}
+  - component: {fileID: 2131993698}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -16081,7 +16082,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131993694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -16159,6 +16160,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131993698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131993694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb472b09a920465eaeaa19d7511ce7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shbm: {fileID: 0}
 --- !u!1 &2137686968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: 6b1fcd4bc0a04491ab342fc7a83ee47e,
