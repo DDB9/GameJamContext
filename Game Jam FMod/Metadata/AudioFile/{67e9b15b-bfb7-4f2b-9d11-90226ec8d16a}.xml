@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{67e9b15b-bfb7-4f2b-9d11-90226ec8d16a}">
+        <property name="assetPath">
+            <value>TheBarnOST2_FIN_forest.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>120.36557823129252</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{83c1cfb8-e9d0-484c-a524-14c7a4333a29}</destination>
+        </relationship>
+    </object>
+</objects>

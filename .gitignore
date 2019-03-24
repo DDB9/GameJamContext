@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ContextJam/Assets/FMODStudioCache.asset
+ContextJam/Assets/FMODStudioCache.asset
+ContextJam/fmod_editor.log
