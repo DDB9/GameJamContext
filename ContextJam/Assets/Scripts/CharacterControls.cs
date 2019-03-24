@@ -166,40 +166,6 @@ public class CharacterControls : MonoBehaviour
                     SceneManager.LoadScene("Farm");
                 }
             }
-
-            var firstInventorySlot = inventorySlots[0].transform.GetChild(0);
-            var secondInventorySlot = inventorySlots[1].transform.GetChild(0);
-            var thirdInventorySlot = inventorySlots[2].transform.GetChild(0);
-            var fourthInventorySlot = inventorySlots[3].transform.GetChild(0);
-
-            if (currentSelected == 0 && firstInventorySlot.GetComponent<Image>().sprite.name == "spear") 
-            {
-                if (hitInfo.transform.CompareTag("Fish")) 
-                {
-                    Destroy(hitInfo.transform.GetComponent<GameObject>());
-                }
-            }
-            if (currentSelected == 1 && secondInventorySlot.GetComponent<Image>().sprite.name == "spear") 
-            {
-                if (hitInfo.transform.CompareTag("Fish")) 
-                {
-                    Destroy(hitInfo.transform.GetComponent<GameObject>());
-                }
-            }
-            if (currentSelected == 2 && thirdInventorySlot.GetComponent<Image>().sprite.name == "spear") 
-            {
-                if (hitInfo.transform.CompareTag("Fish")) 
-                {
-                    Destroy(hitInfo.transform.GetComponent<GameObject>());
-                }
-            }
-            if (currentSelected == 3 && fourthInventorySlot.GetComponent<Image>().sprite.name == "spear") 
-            {
-                if (hitInfo.transform.CompareTag("Fish")) 
-                {
-                    Destroy(hitInfo.transform.GetComponent<GameObject>());
-                }
-            }
         }
         
         RaycastHit hit;
