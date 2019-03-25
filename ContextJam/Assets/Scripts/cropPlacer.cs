@@ -58,6 +58,11 @@ public class cropPlacer : MonoBehaviour
         {
             EatFood();
         }
+
+        potatoRegain = 20 - potatoCount;
+        berryRegain = 10 - berryCount;
+        tomatoRegain = 15 - tomatoCount;
+
     }
 
     void PlaceCubeNear(Vector3 clickPoint)  // Define distance between crops with differently sized colliders on the prefabs?
