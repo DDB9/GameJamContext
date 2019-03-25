@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: 114767415667273864}
   - {fileID: 114501103867531822}
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114293395442155880}
+  - {fileID: 114730954313598988}
+>>>>>>> master
   EditorEvents:
   - {fileID: 114512503126820942}
   - {fileID: 114302836665784678}
@@ -36,12 +41,36 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: 114316062408406954}
   - {fileID: 114390469136506614}
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
   StringsBanks:
   - {fileID: 114462647953532844}
   - {fileID: 114767415667273864}
   stringsBankWriteTime: 636891144727417775
+=======
+  - {fileID: 114046468152451230}
+  StringsBanks:
+  - {fileID: 114462647953532844}
+  - {fileID: 114767415667273864}
+  stringsBankWriteTime: 636891206430000000
+>>>>>>> master
   cacheVersion: 3
+--- !u!114 &114002051168117564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: newpagevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114009478984805192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +103,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114018590132222452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114022871425613360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +132,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Jumpvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114023539542900042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: plantvolume
   Min: 0
   Max: 1
   Default: 0
@@ -169,17 +230,43 @@ MonoBehaviour:
   Path: event:/Music All
   guid: 633078d6712d7d4b94e09fb63a0b2546
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114724054743667106}
   - {fileID: 114522883977131210}
   - {fileID: 114645910995194862}
+=======
+  - {fileID: 114801654721738382}
+  - {fileID: 114240540893535880}
+  - {fileID: 114647756919965564}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 483622
+--- !u!114 &114040857545985822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: bucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114041383377280276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +299,26 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114046468152451230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Documenten\HKU\Jaar 2\Project - Context II\ContextJam\ContextJam\Assets\fmodbuilds\Desktop\Master
+    Bank.bank
+  lastModified: 636891129769868296
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 5308128
+  Exists: 0
 --- !u!114 &114048157806051464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,12 +350,20 @@ MonoBehaviour:
   Path: event:/bucket (2)
   guid: 89c61fcedafe934b96a1c3dc12273b51
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114219749697170498}
+=======
+  - {fileID: 114213707181765700}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 1359
@@ -267,12 +382,20 @@ MonoBehaviour:
   Path: event:/Game Jam SD - new page
   guid: 8823d30b10c5e248a3ec5c638d06d3ce
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114630017196445546}
+=======
+  - {fileID: 114002051168117564}
+>>>>>>> master
   MinDistance: 1
   MaxDistance: 20
   Length: 375
@@ -435,7 +558,11 @@ MonoBehaviour:
   Path: event:/cow
   guid: af120ca1b62c7847a9fb199091bb0f74
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -490,6 +617,22 @@ MonoBehaviour:
   Name: currentscene
   Min: 0
   Max: 4
+  Default: 0
+--- !u!114 &114128864433639280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: newpagevolume
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114131904979435794
 MonoBehaviour:
@@ -552,6 +695,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114148530266342266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: bucketvolume
   Min: 0
   Max: 1
   Default: 0
@@ -667,6 +826,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114171428220672978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: currentscene
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114173432612263374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,6 +855,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: newpagevolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114197512992306690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: heartbeatvolume
   Min: 0
   Max: 1
   Default: 0
@@ -699,6 +890,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114213707181765700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: bucket2volume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114213803710247218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +919,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Jumpvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114215092936680538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullspanning
   Min: 0
   Max: 1
   Default: 0
@@ -763,6 +986,22 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114240540893535880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullvolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114243911179798312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +1015,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Parameter spanning
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114243943838372736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: plantvolume
   Min: 0
   Max: 1
   Default: 0
@@ -845,12 +1100,20 @@ MonoBehaviour:
   Path: event:/foosteps
   guid: 75bed2f1264ddf4496a8075198fb7922
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114717176652264372}
+=======
+  - {fileID: 114148530266342266}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 362
@@ -869,12 +1132,20 @@ MonoBehaviour:
   Path: event:/Music_lake
   guid: 675fcaf64ee36548a15641f4d2d4f0c9
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114945544949153304}
+=======
+  - {fileID: 114934094609104470}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 179809
@@ -893,15 +1164,39 @@ MonoBehaviour:
   Path: event:/pick up
   guid: 681487406feb19448c80bad427eaf9ee
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114509701153533262}
+=======
+  - {fileID: 114697511874582492}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 449
+--- !u!114 &114272173800526780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: lakevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114274318911756622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +1229,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114277943989251800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114281323988986720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,6 +1261,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114293395442155880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/bank2.bank
+  lastModified: 636891206430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 138176
+  Exists: 1
 --- !u!114 &114297993337646946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,12 +1327,20 @@ MonoBehaviour:
   Path: event:/drop bucket
   guid: 1c31b9efb3b30a41aaa804d51c751960
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114649032731612028}
+=======
+  - {fileID: 114644567755045576}
+>>>>>>> master
   MinDistance: 1
   MaxDistance: 20
   Length: 1358
@@ -1019,6 +1357,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: plantvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114312571519653908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Parameter spanning
   Min: 0
   Max: 1
   Default: 0
@@ -1123,6 +1477,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: plantvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114340811877770720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: heartbeatvolume
   Min: 0
   Max: 1
   Default: 0
@@ -1286,6 +1656,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114386694336914468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114390469136506614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +1692,41 @@ MonoBehaviour:
   - Name: Desktop
     Value: 5308128
   Exists: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &114395083678547600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: dropbucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114395497900381520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullvolume
+  Min: 0
+  Max: 1
+  Default: 0
+>>>>>>> master
 --- !u!114 &114396265067836668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,13 +1774,22 @@ MonoBehaviour:
   Path: event:/Music
   guid: fd5af64710a13548841a5a93f0235b25
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114358180334071734}
   - {fileID: 114436524481403540}
+=======
+  - {fileID: 114590577277314286}
+  - {fileID: 114415211160397350}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 213988
@@ -1379,6 +1809,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114415211160397350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Parameter spanning
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114417395326132654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,6 +1838,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: plantvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114418708314358314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Jumpvolume
   Min: 0
   Max: 1
   Default: 0
@@ -1427,7 +1889,11 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &114436524481403540
+=======
+--- !u!114 &114438473101304868
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1439,7 +1905,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: Parameter spanning
+=======
+  Name: Jumpvolume
+>>>>>>> master
   Min: 0
   Max: 1
   Default: 0
@@ -1552,12 +2022,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets/fmodbuilds/Desktop/Master Bank.strings.bank
-  lastModified: 636890618820000000
+  lastModified: 636891206430000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1432
-  Exists: 0
+  Exists: 1
+--- !u!114 &114463747074837812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114467357519461626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,6 +2057,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: firevolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114467884555256908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: bucketvolume
   Min: 0
   Max: 1
   Default: 0
@@ -1606,6 +2108,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114477204024943634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114481164150402536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,6 +2153,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: bucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114495333743582628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: lakevolume
   Min: 0
   Max: 1
   Default: 0
@@ -1720,16 +2254,41 @@ MonoBehaviour:
   Path: event:/fire
   guid: e3328fafb798d249af1b997c12241e74
   Banks:
+<<<<<<< HEAD
   - {fileID: 114501103867531822}
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114293395442155880}
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114940876218895722}
+=======
+  - {fileID: 114463747074837812}
+>>>>>>> master
   MinDistance: 1
   MaxDistance: 20
   Length: 13500
+--- !u!114 &114513391535492548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullvolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114521150741683868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,7 +2433,11 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &114566027164616100
+=======
+--- !u!114 &114565327886763634
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1886,9 +2449,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: plantvolume
   Min: 0
   Max: 1
+=======
+  Name: currentscene
+  Min: 0
+  Max: 4
+>>>>>>> master
   Default: 0
 --- !u!114 &114567849291271714
 MonoBehaviour:
@@ -1954,6 +2523,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114590577277314286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114596610972206412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,15 +2554,42 @@ MonoBehaviour:
   Path: event:/jump
   guid: c6459dc015462449a84770a3d642b7a9
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114951654182000290}
+=======
+  - {fileID: 114633485345624410}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 494
+--- !u!114 &114596694324636716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Documenten\HKU\Jaar 2\Project - Context II\ContextJam\ContextJam\Assets\fmodbuilds\Desktop\bank2.bank
+  lastModified: 636891129769898203
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 138176
+  Exists: 1
 --- !u!114 &114602962627473874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,7 +2606,11 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &114615248857907090
+=======
+--- !u!114 &114606671657531218
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2006,7 +2622,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: heartbeatvolume
+=======
+  Name: bucket2volume
+>>>>>>> master
   Min: 0
   Max: 1
   Default: 0
@@ -2026,7 +2646,11 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &114630017196445546
+=======
+--- !u!114 &114633485345624410
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2038,7 +2662,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: newpagevolume
+=======
+  Name: Jumpvolume
+>>>>>>> master
   Min: 0
   Max: 1
   Default: 0
@@ -2087,6 +2715,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: heartbeatvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114644567755045576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: dropbucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114647756919965564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullspanning
   Min: 0
   Max: 1
   Default: 0
@@ -2153,7 +2813,11 @@ MonoBehaviour:
   Path: event:/close_book
   guid: d926f79956c2fb498a2a1e8657deac03
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2161,6 +2825,38 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 285
+--- !u!114 &114655121527973014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: dropbucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114663784542892098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Parameter spanning
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114671799547128568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,6 +2905,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114683562311676672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: plantvolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114683625760896542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,6 +2954,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
 --- !u!114 &114692048966515480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114697511874582492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2321,7 +3049,11 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &114724054743667106
+=======
+--- !u!114 &114730954313598988
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2330,6 +3062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2337,6 +3070,19 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/stijn/Documents/GitHub/GameJamContext/ContextJam/Assets/fmodbuilds/Desktop/Master
+    Bank.bank
+  lastModified: 636891206430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 5483936
+  Exists: 1
+>>>>>>> master
 --- !u!114 &114732045704659858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,6 +3163,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114760240450365968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: fullspanning
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114762330452799584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,12 +3194,20 @@ MonoBehaviour:
   Path: event:/Game Jam SD - hearbeat1
   guid: c224a3460a02a24ab4220ff478565fb0
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114615248857907090}
+=======
+  - {fileID: 114989224625785216}
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 2724
@@ -2454,12 +3224,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\fmodbuilds\Desktop\Master Bank.strings.bank
+<<<<<<< HEAD
   lastModified: 636891144727417775
+=======
+  lastModified: 636891129769887784
+>>>>>>> master
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1432
-  Exists: 1
+  Exists: 0
 --- !u!114 &114772838908832924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2555,7 +3329,11 @@ MonoBehaviour:
   Path: event:/Music_forest
   guid: 44ebd81b9735bf4fbb1d6fde05a6510c
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2578,7 +3356,11 @@ MonoBehaviour:
   Path: event:/forest
   guid: afcd80322d25234caf175ed8db0f4147
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2586,6 +3368,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 51280
+--- !u!114 &114801654721738382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: currentscene
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114811314304343210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,6 +3397,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: dropbucketvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114812364914253676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: newpagevolume
   Min: 0
   Max: 1
   Default: 0
@@ -2621,7 +3435,11 @@ MonoBehaviour:
   - Name: Desktop
     Value: 138176
   Exists: 1
+<<<<<<< HEAD
 --- !u!114 &114823674200712246
+=======
+--- !u!114 &114823610641443424
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2633,7 +3451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: firevolume
+=======
+  Name: Volume
+>>>>>>> master
   Min: 0
   Max: 1
   Default: 0
@@ -2666,6 +3488,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: volume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114842865370680760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114844655412165946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
   Min: 0
   Max: 1
   Default: 0
@@ -2717,6 +3571,22 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114864780049275054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114879650482897600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2730,6 +3600,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: heartbeatvolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114889574049636864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: firevolume
   Min: 0
   Max: 1
   Default: 0
@@ -2893,6 +3779,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114934094609104470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: lakevolume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114934199123977414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2924,12 +3826,20 @@ MonoBehaviour:
   Path: event:/plant
   guid: 235ff0d3e8787e4e86311963fc0e4ecb
   Banks:
+<<<<<<< HEAD
   - {fileID: 114319103818766062}
+=======
+  - {fileID: 114730954313598988}
+>>>>>>> master
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114566027164616100}
+=======
+  - {fileID: 114023539542900042}
+>>>>>>> master
   MinDistance: 1
   MaxDistance: 20
   Length: 323
@@ -3029,6 +3939,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114967762582311566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: bucket2volume
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114972647840718142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3074,6 +4000,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: lakevolume
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114989224625785216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: heartbeatvolume
   Min: 0
   Max: 1
   Default: 0
