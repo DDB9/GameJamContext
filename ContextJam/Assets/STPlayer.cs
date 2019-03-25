@@ -14,10 +14,9 @@ public class STPlayer : MonoBehaviour
     public StaminaHealthBarManager shbm;
 
     public loadwhichscene lws;
-    Scene currentScene = SceneManager.GetActiveScene();
     //string sceneName  = currentScene.name;
     string sceneName;
-
+    Scene currentScene;
 
     void Awake()
     {
@@ -26,6 +25,7 @@ public class STPlayer : MonoBehaviour
         OST.getParameter("fullvolume", out fullvolume);
         OST.getParameter("currentscene", out currentscene);
         currentscene.setValue(1);
+        currentScene = SceneManager.GetActiveScene();
 
     }
 
@@ -40,6 +40,7 @@ public class STPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         Debug.Log(SceneManager.GetActiveScene().name);
 
