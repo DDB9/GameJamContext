@@ -34,7 +34,6 @@ public class CharacterControls : MonoBehaviour
 
     void Awake()
     {
-        if (_inventory.activeInHierarchy) _inventory.SetActive(false);  // Disable inventory on play (if active).
         if (_booklet.activeInHierarchy) _booklet.SetActive(false);      // Do the same for the booklet.
 
         sprintSpeed = speed * 1.75f;
@@ -77,21 +76,6 @@ public class CharacterControls : MonoBehaviour
 
     void Update()
     {
-        // Open inventory.
-        if (Input.GetKeyDown("e"))
-        {
-            if (!_inventory.activeInHierarchy)
-            {
-                _inventory.SetActive(true);
-                inventoryActive = true;
-            }
-            else if (_inventory.activeInHierarchy)
-            {
-                _inventory.SetActive(false);
-                inventoryActive = false;
-            }
-        }
-
         // Open booklet.
         if (Input.GetKeyDown("q"))
         {
@@ -104,38 +88,21 @@ public class CharacterControls : MonoBehaviour
                 _booklet.SetActive(false);
             }
         }
+        // Keyboard input.
+        if (Input.GetKeyDown(KeyCode.Alpha1)) currentSelected = 0;
+        if (Input.GetKeyDown(KeyCode.Alpha2)) currentSelected = 1;
+        if (Input.GetKeyDown(KeyCode.Alpha3)) currentSelected = 2;
+        if (Input.GetKeyDown(KeyCode.Alpha4)) currentSelected = 3;
 
-        // Inventory Selection
-        if (_inventory.activeInHierarchy)
-        {
-            // Scrollwheel input.
-            float d = Input.GetAxis("Mouse ScrollWheel");
-            if (d > 0f)
-            {
-                if (currentSelected <= inventorySlots.Length) currentSelected++;
-                if (currentSelected >= inventorySlots.Length) currentSelected = 0;
-            }
-            if (d < 0f)
-            {
-                if (currentSelected <= inventorySlots.Length) currentSelected--;
-                if (currentSelected < 0) currentSelected = 3;
-            }
-            // Keyboard input.
-            if (Input.GetKeyDown(KeyCode.Alpha1)) currentSelected = 0;
-            if (Input.GetKeyDown(KeyCode.Alpha2)) currentSelected = 1;
-            if (Input.GetKeyDown(KeyCode.Alpha3)) currentSelected = 2;
-            if (Input.GetKeyDown(KeyCode.Alpha4)) currentSelected = 3;
-
-            // Setting the slots active and inactive.
-            if (currentSelected == 0) inventorySlots[0].enabled = false;
-            else inventorySlots[0].enabled = true;
-            if (currentSelected == 1) inventorySlots[1].enabled = false;
-            else inventorySlots[1].enabled = true;
-            if (currentSelected == 2) inventorySlots[2].enabled = false;
-            else inventorySlots[2].enabled = true;
-            if (currentSelected == 3) inventorySlots[3].enabled = false;
-            else inventorySlots[3].enabled = true;
-        }
+        // Setting the slots active and inactive.
+        if (currentSelected == 0) inventorySlots[0].color = new Color32(0, 111, 255, 243);
+        else inventorySlots[0].color = Color.white;
+        if (currentSelected == 1) inventorySlots[1].color = new Color32(0, 111, 255, 243);
+        else inventorySlots[1].color = Color.white;
+        if (currentSelected == 2) inventorySlots[2].color = new Color32(0, 111, 255, 243);
+        else inventorySlots[2].color = Color.white;
+        if (currentSelected == 3) inventorySlots[3].color = new Color32(0, 111, 255, 243);
+        else inventorySlots[3].color = Color.white;
 
         // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
@@ -156,12 +123,12 @@ public class CharacterControls : MonoBehaviour
                     SceneManager.LoadScene("Forest");
                 }
                 // ... Lake gate, then load Lake scene.
-                else if (hitInfo.transform.CompareTag("Lake Gate"))
+                if (hitInfo.transform.CompareTag("Lake Gate"))
                 {
                     SceneManager.LoadScene("Lake");
                 }
                 // ... Farm gate, then load Farm scene.
-                else if (hitInfo.transform.CompareTag("Farm Gate"))
+                if (hitInfo.transform.CompareTag("Farm Gate"))
                 {
                     SceneManager.LoadScene("Farm");
                 }
