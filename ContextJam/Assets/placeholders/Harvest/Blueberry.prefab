@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3450166829786833282}
   - component: {fileID: 3899479058770706604}
   - component: {fileID: 1116025538721026188}
-  - component: {fileID: 2648544550475169820}
   m_Layer: 0
   m_Name: bb_fase1
   m_TagString: Untagged
@@ -78,19 +77,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2648544550475169820
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536380514303409923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
-  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &2912700706689892041
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +88,6 @@ GameObject:
   - component: {fileID: 4046343939985672778}
   - component: {fileID: 762248768825805658}
   - component: {fileID: 8968383709884151913}
-  - component: {fileID: 823921810963404692}
   m_Layer: 0
   m_Name: bb_fase3
   m_TagString: Untagged
@@ -169,19 +154,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &823921810963404692
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912700706689892041}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
-  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &3459477956339189763
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +227,6 @@ GameObject:
   - component: {fileID: 5298853401393433045}
   - component: {fileID: 4830397168532043141}
   - component: {fileID: 6455294745790695704}
-  - component: {fileID: 2318638159768822185}
   m_Layer: 0
   m_Name: bb_fase2
   m_TagString: Untagged
@@ -322,19 +293,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2318638159768822185
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6386423764049401355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
-  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &7925806648526598473
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +304,6 @@ GameObject:
   - component: {fileID: 3881145873907339209}
   - component: {fileID: 8224261483817276426}
   - component: {fileID: 800055835558518310}
-  - component: {fileID: 5126129110587448558}
   m_Layer: 0
   m_Name: bb_fase4
   m_TagString: Untagged
@@ -416,19 +373,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5126129110587448558
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7925806648526598473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2050469, y: 0.5, z: 0.05}
-  m_Center: {x: -0.31247652, y: 0, z: 0}
 --- !u!1 &8792547116441700199
 GameObject:
   m_ObjectHideFlags: 0
