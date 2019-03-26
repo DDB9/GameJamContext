@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class STPlayer : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class STPlayer : MonoBehaviour
     FMOD.Studio.ParameterInstance currentscene;
 
     public StaminaHealthBarManager shbm;
+    Scene scene;
+
 
     void Awake()
     {
@@ -20,14 +24,19 @@ public class STPlayer : MonoBehaviour
         OST.getParameter("currentscene", out currentscene);
         currentscene.setValue(1);
 
+        scene = SceneManager.GetActiveScene();
+
+        print(scene.name);
+
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(OST, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        OST.start();
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(OST, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        OST.start();
+
     }
 
     // Update is called once per frame
@@ -36,7 +45,11 @@ public class STPlayer : MonoBehaviour
         fullvolume.setValue(0.7f);
         currentscene.setValue(1);
 
-        if (shbm.hunger < 30)
+        scene = SceneManager.GetActiveScene();
+        //print(scene.name);
+
+
+        if (shbm.starvationTimer > 1)
         {
             fullspanning.setValue(1);
         }
@@ -44,5 +57,23 @@ public class STPlayer : MonoBehaviour
         {
             fullspanning.setValue(0);
         }
+
+        if (scene.name == "Farm")
+        {
+            currentscene.setValue(1);
+        }
+        else if (scene.name == "Lake")
+        {
+            currentscene.setValue(2);
+        }
+        else if (scene.name == "Forest")
+        {
+            currentscene.setValue(3);
+        }
     }
+
+	//void OnDestroy()
+	//{
+ //       OST.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+	//}
 }
