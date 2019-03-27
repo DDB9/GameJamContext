@@ -130,7 +130,7 @@ public class CharacterControls : MonoBehaviour
                 // ... Farm gate, then load Farm scene.
                 if (hitInfo.transform.CompareTag("Farm Gate"))
                 {
-                    SceneManager.LoadScene("Farm");
+                    SceneManager.LoadScene("Farm 1");
                 }
             }
         }
