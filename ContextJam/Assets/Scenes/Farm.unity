@@ -6418,7 +6418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93f5465ad00bc5949bba977ea990c929, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93f5465ad00bc5949bba977ea990c929, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15556,6 +15556,16 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[3]
       value: 
       objectReference: {fileID: 1861789945}
+    - target: {fileID: 2232847280831750830, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: hungerBarScript
+      value: 
+      objectReference: {fileID: 710813340}
+    - target: {fileID: 2232847280831750830, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: hungerRegain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
         type: 3}
       propertyPath: Params.Array.size
@@ -15939,15 +15949,15 @@ PrefabInstance:
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 454645405}
-    - target: {fileID: 5811007318119490438, guid: b5c208cb6070a4492b5e3edaf3dcd103,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 5811007318595721948, guid: b5c208cb6070a4492b5e3edaf3dcd103,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811007318119490438, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5811007318581974988, guid: b5c208cb6070a4492b5e3edaf3dcd103,
         type: 3}
