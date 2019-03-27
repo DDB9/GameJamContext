@@ -29,15 +29,7 @@ public class Tomato : MonoBehaviour, IInventoryItem
 
     public void OnDrop()
     {
-        Debug.Log("OnDrop!");
-        RaycastHit hit = new RaycastHit();
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 1000))
-        {
-            Debug.Log("Hit!");
-            gameObject.SetActive(true);
-            gameObject.transform.position = hit.point;
-        }
+
     }
 
     public void OnTriggerStay(Collider other)

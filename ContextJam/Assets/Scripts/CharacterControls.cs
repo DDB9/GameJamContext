@@ -30,6 +30,8 @@ public class CharacterControls : MonoBehaviour
     private float sprintSpeed;
     private float walkSpeed;
 
+    public GameObject blueberry, tomato, potato;
+
     private Image blueberryInfo, potatoInfo, tomatoInfo;
 
     // things for eating 
@@ -128,6 +130,11 @@ public class CharacterControls : MonoBehaviour
         if (currentSelected == 3) inventorySlots[3].color = new Color32(0, 111, 255, 243);
         else inventorySlots[3].color = Color.white;
 
+        // Dropping items
+        if (Input.GetKeyDown("x")) {
+            DropItem();
+        }
+
         // Sprint if the shift-key has been pressed.
         if (Input.GetKey(KeyCode.LeftShift)) speed = sprintSpeed;
         else speed = walkSpeed;
@@ -158,40 +165,6 @@ public class CharacterControls : MonoBehaviour
                 }
             }
         }
-        
-        RaycastHit hit;
-        Debug.DrawRay(transform.position, camera.transform.forward, Color.green);
-        // Constantly checks if the player is looking at a pickupable.
-        if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) 
-        {
-            if (hit.transform.name == "Tomato") 
-            {
-                tomatoInfo = GameObject.Find("TMTInfoPanel").GetComponent<Image>();
-                tomatoInfo.enabled = true;  // Enabled the info panel.
-            }
-            else if (tomatoInfo != null)
-            {
-                tomatoInfo.enabled = false;     // Otherwise the panels are disabled to prevent littering.
-            }
-            if (hit.transform.name == "Potato") 
-            {
-                potatoInfo = GameObject.Find("PTTInfoPanel").GetComponent<Image>();
-                potatoInfo.enabled = true;  // Enabled the info panel.
-            }
-            else if (potatoInfo != null)
-            {
-                potatoInfo.enabled = false;
-            }
-            if (hit.transform.name == "Blueberry") 
-            {
-                blueberryInfo = GameObject.Find("BBInfoPanel").GetComponent<Image>();
-                blueberryInfo.enabled = true;   // Enabled the info panel.
-            }
-            else if (blueberryInfo != null) 
-            {
-                blueberryInfo.enabled = false;
-            }
-        }
     }
  
 
@@ -207,7 +180,7 @@ public class CharacterControls : MonoBehaviour
         return Mathf.Sqrt(2 * jumpHeight * gravity);
     }
 
-    private void OnCollisionEnter(Collision hit) // aAA don't comment this out it really scared me when stuff stopped working...!
+    void OnCollisionEnter(Collision hit) // aAA don't comment this out it really scared me when stuff stopped working...!
     {
         if (hit.collider.tag == "Pickupable")
         {
@@ -215,6 +188,98 @@ public class CharacterControls : MonoBehaviour
             if (item != null)
             {
                 inventory.AddItem(item);
+            }
+        }
+    }
+
+    void DropItem()
+    {
+        if (currentSelected == 0) 
+        {
+            if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "blueberry-sprite") 
+            {
+                Instantiate(blueberry, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato-sprite") 
+            {
+                Instantiate(potato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite.name == "tomato-sprite") 
+            {
+                Instantiate(tomato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[0].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
+            }
+        }
+
+        if (currentSelected == 1) 
+        {
+            if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "blueberry-sprite") {
+                Instantiate(blueberry, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato-sprite") {
+                Instantiate(potato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite.name == "tomato-sprite") {
+                Instantiate(tomato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[1].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
+            }
+        }
+
+        if (currentSelected == 2) {
+            if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "blueberry-sprite") {
+                Instantiate(blueberry, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato-sprite") {
+                Instantiate(potato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite.name == "tomato-sprite") {
+                Instantiate(tomato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[2].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
+            }
+        }
+
+        if (currentSelected == 3) {
+            if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "blueberry-sprite") {
+                Instantiate(blueberry, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "potato-sprite") {
+                Instantiate(potato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
+            }
+            if (inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite.name == "tomato-sprite") {
+                Instantiate(tomato, this.transform.position + Vector3.forward, Quaternion.identity);
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                inventorySlots[3].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
     }
@@ -234,7 +299,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += berryRegain;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
@@ -243,7 +308,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += potatoRegain;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
@@ -252,7 +317,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += tomatoRegain;
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
 
         }
@@ -264,7 +329,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += berryRegain;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
@@ -273,7 +338,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += potatoRegain;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
@@ -282,7 +347,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += tomatoRegain;
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
 
         }
@@ -294,7 +359,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += berryRegain;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
@@ -303,7 +368,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += potatoRegain;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
@@ -312,7 +377,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += tomatoRegain;
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
 
         }
@@ -324,7 +389,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += berryRegain;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
@@ -333,7 +398,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += potatoRegain;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
@@ -342,7 +407,7 @@ public class CharacterControls : MonoBehaviour
                 hungerBarScript.hunger += tomatoRegain;
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
     }

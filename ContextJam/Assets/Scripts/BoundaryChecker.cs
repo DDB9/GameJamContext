@@ -9,24 +9,24 @@ public class BoundaryChecker : MonoBehaviour
 
    void OnTriggerStay(Collider other) 
    {
-        if (other.CompareTag("Occupied"))
+        if (other.CompareTag("Occupied")) 
         {
-            if (other.transform.parent.name == "Blueberry") 
+            if (other.transform.parent.name == "Blueberry(Clone)") 
             {
                 Destroy(other.transform.parent);
                 _inventory.AddItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
-            if (other.transform.parent.name == "Potato") 
+            else if (other.transform.parent.name == "Potato(Clone)")
             {
                 Destroy(other.transform.parent);
                 _inventory.AddItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
-            if (other.transform.parent.name == "Tomato") 
+            else if (other.transform.parent.name == "Tomato(Clone)") 
             {
+                Debug.Log("Tomato here");
                 Destroy(other.transform.parent);
                 _inventory.AddItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
-   }
-                
+    }
 }
