@@ -6917,6 +6917,10 @@ PrefabInstance:
       propertyPath: hungerBarScript
       value: 
       objectReference: {fileID: 2021975354}
+    - target: {fileID: 1074345568, guid: a859ed5c129379b49ac24e0a16001248, type: 3}
+      propertyPath: shbm
+      value: 
+      objectReference: {fileID: 2021975354}
     - target: {fileID: 1159460864, guid: a859ed5c129379b49ac24e0a16001248, type: 3}
       propertyPath: inventory
       value: 
