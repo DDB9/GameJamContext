@@ -83,7 +83,10 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);   // Really gotta fix this, this doesn't work at all.
+                if (Inventory.mItems.Contains(GameObject.Find("Blueberry").GetComponent<IInventoryItem>()))
+                {
+                    Inventory.mItems.Remove(GameObject.Find("Blueberry").GetComponent<IInventoryItem>());
+                }
             }
 
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
@@ -111,7 +114,10 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                if (Inventory.mItems.Contains(GameObject.Find("Blueberry").GetComponent<IInventoryItem>())) 
+                {
+                    Inventory.mItems.Remove(GameObject.Find("Blueberry").GetComponent<IInventoryItem>());
+                }
             }
 
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
