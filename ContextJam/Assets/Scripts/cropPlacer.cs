@@ -12,7 +12,7 @@ public class cropPlacer : MonoBehaviour
     public GameObject tomato;
 
     public Inventory inventory;
-
+    /*
     public StaminaHealthBarManager hungerBarScript;
     public float hungerRegain;
     public float tomatoRegain = 15;
@@ -23,7 +23,7 @@ public class cropPlacer : MonoBehaviour
     public int berryCount;
     public int tomatoCount;
     public int potatoCount;
-
+    */
 
 
     public Image[] inventorySlots = new Image[4];
@@ -54,7 +54,7 @@ public class cropPlacer : MonoBehaviour
                 else return;
             }
         }
-        if (Input.GetMouseButtonDown(1))
+        /*if (Input.GetMouseButtonDown(1))
         {
             EatFood();
         }
@@ -62,6 +62,7 @@ public class cropPlacer : MonoBehaviour
         potatoRegain = 20 - potatoCount;
         berryRegain = 10 - berryCount;
         tomatoRegain = 15 - tomatoCount;
+        */
 
     }
 
@@ -192,7 +193,7 @@ public class cropPlacer : MonoBehaviour
             }
         }
     }
-
+    /*
     void EatFood()
     {
         var firstInventorySlot = inventorySlots[0].transform.GetChild(0);
@@ -342,5 +343,5 @@ public class cropPlacer : MonoBehaviour
         if (tomatoCount > 0) tomatoCount -= 1;
         if (berryCount > 0) berryCount -= 1;
     }
-
+    */
 }

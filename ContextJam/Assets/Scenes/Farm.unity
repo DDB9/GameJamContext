@@ -6376,7 +6376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93f5465ad00bc5949bba977ea990c929, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93f5465ad00bc5949bba977ea990c929, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14697,6 +14697,7 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[3]
       value: 
       objectReference: {fileID: 1861789945}
+<<<<<<< HEAD
     - target: {fileID: 1159460864, guid: a859ed5c129379b49ac24e0a16001248, type: 3}
       propertyPath: inventory
       value: 
@@ -14705,6 +14706,53 @@ PrefabInstance:
       propertyPath: shbm
       value: 
       objectReference: {fileID: 1958816490}
+=======
+    - target: {fileID: 2232847280831750830, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: hungerBarScript
+      value: 
+      objectReference: {fileID: 710813340}
+    - target: {fileID: 2232847280831750830, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: hungerRegain
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Event
+      value: event:/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[1].Value
+      value: 0.842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750824, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: Params.Array.data[2].Value
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232847280831750825, guid: 2f3451b47d4a44ab899306da9439c8ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> master
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a859ed5c129379b49ac24e0a16001248, type: 3}
 --- !u!1001 &3670147933065423153
@@ -15045,6 +15093,7 @@ PrefabInstance:
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 454645405}
+<<<<<<< HEAD
     - target: {fileID: 5511752418607521896, guid: 4eb3dc0df7cc46b48b685065654b86c9,
         type: 3}
       propertyPath: m_Name
@@ -15057,6 +15106,22 @@ PrefabInstance:
     - target: {fileID: 2089659770, guid: 4eb3dc0df7cc46b48b685065654b86c9, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 0
+=======
+    - target: {fileID: 5811007318595721948, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811007318119490438, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811007318581974988, guid: b5c208cb6070a4492b5e3edaf3dcd103,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 218.09976
+>>>>>>> master
       objectReference: {fileID: 0}
     - target: {fileID: 1855035588345888624, guid: 4eb3dc0df7cc46b48b685065654b86c9,
         type: 3}
