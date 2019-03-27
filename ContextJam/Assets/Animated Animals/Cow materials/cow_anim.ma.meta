@@ -53,7 +53,62 @@ ModelImporter:
     9500000: //RootNode
     13700000: cowRanch:Mesh
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Body_002
+    second: {fileID: 2100000, guid: 6fc5cdf364ce64b4e9df9dba6ab153d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Eyelids_002
+    second: {fileID: 2100000, guid: 643a7b6497c632e4689174a37f3ac24a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Eyes_002
+    second: {fileID: 2100000, guid: 373752ea2feea3149b0d120d947923f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Hair1
+    second: {fileID: 2100000, guid: e4c36f6710e2436459e005b1f7b77de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Head_002
+    second: {fileID: 2100000, guid: 6fc5cdf364ce64b4e9df9dba6ab153d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Hooves_front1
+    second: {fileID: 2100000, guid: e4c36f6710e2436459e005b1f7b77de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Horns1
+    second: {fileID: 2100000, guid: e4c36f6710e2436459e005b1f7b77de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Snout1
+    second: {fileID: 2100000, guid: c4bc350c14214ef42846c946eb04f8f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Tail1
+    second: {fileID: 2100000, guid: e4c36f6710e2436459e005b1f7b77de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Tail_hair1
+    second: {fileID: 2100000, guid: e4c36f6710e2436459e005b1f7b77de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cowRanch_Udders1
+    second: {fileID: 2100000, guid: c4bc350c14214ef42846c946eb04f8f3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -80,7 +135,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1197
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
