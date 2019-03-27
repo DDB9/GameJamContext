@@ -39,7 +39,6 @@ public class cropPlacer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Inventory.mItems.Count);
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
@@ -47,7 +46,7 @@ public class cropPlacer : MonoBehaviour
 
             if (Physics.Raycast(ray, out hitInfo))
             {
-                if (hitInfo.transform.tag == "Interactable" 
+                if (hitInfo.transform.tag == "Interactable"     // This shhould probably go in playercontrols.
                     && hitInfo.transform.tag != "Pickupable"
                     && hitInfo.transform.tag != "Occupied")
                 {

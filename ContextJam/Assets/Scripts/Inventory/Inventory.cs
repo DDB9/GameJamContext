@@ -30,7 +30,6 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(IInventoryItem item)
     {
-        Debug.Log("Removing item");
         if (mItems.Contains(item.Name))
         {
             Debug.Log(item.Name);
