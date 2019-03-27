@@ -226,7 +226,7 @@ public class CharacterControls : MonoBehaviour
         var thirdInventorySlot = inventorySlots[2].transform.GetChild(0);
         var fourthInventorySlot = inventorySlots[3].transform.GetChild(0);
 
-        if (CharacterControls.currentSelected == 0)
+        if (currentSelected == 0)
         {
             if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
@@ -256,7 +256,7 @@ public class CharacterControls : MonoBehaviour
             }
 
         }
-        if (CharacterControls.currentSelected == 1)
+        if (currentSelected == 1)
         {
             if (secondInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
@@ -286,7 +286,7 @@ public class CharacterControls : MonoBehaviour
             }
 
         }
-        if (CharacterControls.currentSelected == 2)
+        if (currentSelected == 2)
         {
             if (thirdInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
@@ -316,7 +316,7 @@ public class CharacterControls : MonoBehaviour
             }
 
         }
-        if (CharacterControls.currentSelected == 3)
+        if (currentSelected == 3)
         {
             if (fourthInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
             {
@@ -344,11 +344,8 @@ public class CharacterControls : MonoBehaviour
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
                 Inventory.mItems.RemoveAt(3);
             }
-
         }
-
     }
-
 
     void BerryCounter()
     {

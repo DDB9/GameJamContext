@@ -41,7 +41,7 @@ public class StaminaHealthBarManager : MonoBehaviour
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
         hungerBar = GameObject.Find("Hunger").GetComponent<RawImage>();
         starvationBar = GameObject.Find("Starvation").GetComponent<RawImage>();
-        gameOverScreen.active = false;
+        gameOverScreen.SetActive(false);
         
     }
 

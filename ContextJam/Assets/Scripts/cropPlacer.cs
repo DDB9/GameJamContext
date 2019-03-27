@@ -11,7 +11,8 @@ public class cropPlacer : MonoBehaviour
     public GameObject potato;
     public GameObject tomato;
 
-    public Inventory inventory;
+    Inventory inventory;
+
     /*
     public StaminaHealthBarManager hungerBarScript;
     public float hungerRegain;
@@ -32,11 +33,13 @@ public class cropPlacer : MonoBehaviour
     void Awake()
     {
         grid = FindObjectOfType<GridManager>();
+        inventory = FindObjectOfType<Inventory>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Inventory.mItems.Count);
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
@@ -54,16 +57,6 @@ public class cropPlacer : MonoBehaviour
                 else return;
             }
         }
-        /*if (Input.GetMouseButtonDown(1))
-        {
-            EatFood();
-        }
-
-        potatoRegain = 20 - potatoCount;
-        berryRegain = 10 - berryCount;
-        tomatoRegain = 15 - tomatoCount;
-        */
-
     }
 
     void PlaceCubeNear(Vector3 clickPoint)  // Define distance between crops with differently sized colliders on the prefabs?
@@ -84,26 +77,23 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                if (Inventory.mItems.Contains(GameObject.Find("Blueberry").GetComponent<IInventoryItem>()))
-                {
-                    Inventory.mItems.Remove(GameObject.Find("Blueberry").GetComponent<IInventoryItem>());
-                }
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
+            else if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            else if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
                 Instantiate(tomato, finalPosition, Quaternion.identity);
                 firstInventorySlot.GetComponent<Image>().enabled = false;
                 firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
 
         }
@@ -115,26 +105,23 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                if (Inventory.mItems.Contains(GameObject.Find("Blueberry").GetComponent<IInventoryItem>())) 
-                {
-                    Inventory.mItems.Remove(GameObject.Find("Blueberry").GetComponent<IInventoryItem>());
-                }
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
+            else if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            else if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
                 Instantiate(tomato, finalPosition, Quaternion.identity);
                 secondInventorySlot.GetComponent<Image>().enabled = false;
                 secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
 
@@ -146,23 +133,23 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
+            else if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            else if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
                 Instantiate(tomato, finalPosition, Quaternion.identity);
                 thirdInventorySlot.GetComponent<Image>().enabled = false;
                 thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
 
@@ -173,175 +160,24 @@ public class cropPlacer : MonoBehaviour
                 Instantiate(blueberry, finalPosition, Quaternion.identity);
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
+                inventory.RemoveItem(GameObject.Find("Dummy Blueberry").GetComponent<IInventoryItem>());
             }
 
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
+            else if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
             {
                 Instantiate(potato, finalPosition, Quaternion.identity);
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
+                inventory.RemoveItem(GameObject.Find("Dummy Potato").GetComponent<IInventoryItem>());
             }
 
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
+            else if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
             {
                 Instantiate(tomato, finalPosition, Quaternion.identity);
                 fourthInventorySlot.GetComponent<Image>().enabled = false;
                 fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(Inventory.mItems.Count - 1);
+                inventory.RemoveItem(GameObject.Find("Dummy Tomato").GetComponent<IInventoryItem>());
             }
         }
     }
-    /*
-    void EatFood()
-    {
-        var firstInventorySlot = inventorySlots[0].transform.GetChild(0);
-        var secondInventorySlot = inventorySlots[1].transform.GetChild(0);
-        var thirdInventorySlot = inventorySlots[2].transform.GetChild(0);
-        var fourthInventorySlot = inventorySlots[3].transform.GetChild(0);
-
-        if (CharacterControls.currentSelected == 0)
-        {
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
-            {
-                BerryCounter();
-                hungerBarScript.hunger += berryRegain;
-                firstInventorySlot.GetComponent<Image>().enabled = false;
-                firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
-            }
-
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
-            {
-                PotatoCounter();
-                hungerBarScript.hunger += potatoRegain;
-                firstInventorySlot.GetComponent<Image>().enabled = false;
-                firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
-            }
-
-            if (firstInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
-            {
-                TomatoCounter();
-                hungerBarScript.hunger += tomatoRegain;
-                firstInventorySlot.GetComponent<Image>().enabled = false;
-                firstInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(0);
-            }
-
-        }
-        if (CharacterControls.currentSelected == 1)
-        {
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
-            {
-                BerryCounter();
-                hungerBarScript.hunger += berryRegain;
-                secondInventorySlot.GetComponent<Image>().enabled = false;
-                secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
-            }
-
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
-            {
-                PotatoCounter();
-                hungerBarScript.hunger += potatoRegain;
-                secondInventorySlot.GetComponent<Image>().enabled = false;
-                secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
-            }
-
-            if (secondInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
-            {
-                TomatoCounter();
-                hungerBarScript.hunger += tomatoRegain;
-                secondInventorySlot.GetComponent<Image>().enabled = false;
-                secondInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(1);
-            }
-
-        }
-        if (CharacterControls.currentSelected == 2)
-        {
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
-            {
-                BerryCounter();
-                hungerBarScript.hunger += berryRegain;
-                thirdInventorySlot.GetComponent<Image>().enabled = false;
-                thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
-            }
-
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
-            {
-                PotatoCounter();
-                hungerBarScript.hunger += potatoRegain;
-                thirdInventorySlot.GetComponent<Image>().enabled = false;
-                thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
-            }
-
-            if (thirdInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
-            {
-                TomatoCounter();
-                hungerBarScript.hunger += tomatoRegain;
-                thirdInventorySlot.GetComponent<Image>().enabled = false;
-                thirdInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(2);
-            }
-
-        }
-        if (CharacterControls.currentSelected == 3)
-        {
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "blueberry-sprite")
-            {
-                BerryCounter();
-                hungerBarScript.hunger += berryRegain;
-                fourthInventorySlot.GetComponent<Image>().enabled = false;
-                fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
-            }
-
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "potato-sprite")
-            {
-                PotatoCounter();
-                hungerBarScript.hunger += potatoRegain;
-                fourthInventorySlot.GetComponent<Image>().enabled = false;
-                fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
-            }
-
-            if (fourthInventorySlot.GetComponent<Image>().sprite.name == "tomato-sprite")
-            {
-                TomatoCounter();
-                hungerBarScript.hunger += tomatoRegain;
-                fourthInventorySlot.GetComponent<Image>().enabled = false;
-                fourthInventorySlot.GetComponent<Image>().sprite = null;
-                Inventory.mItems.RemoveAt(3);
-            }
-
-        }
-
-    }
-
-
-    void BerryCounter()
-    {
-        berryCount += 2;
-        if (tomatoCount > 0) tomatoCount -= 1;
-        if (potatoCount > 0) potatoCount -= 1;
-    }
-    void TomatoCounter()
-    {
-        tomatoCount += 2;
-        if (berryCount > 0) berryCount -= 1;
-        if (potatoCount > 0) potatoCount -= 1;
-    }
-    void PotatoCounter()
-    {
-        potatoCount += 2;
-        if (tomatoCount > 0) tomatoCount -= 1;
-        if (berryCount > 0) berryCount -= 1;
-    }
-    */
 }

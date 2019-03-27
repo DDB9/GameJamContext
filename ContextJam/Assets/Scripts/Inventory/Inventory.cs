@@ -6,7 +6,7 @@ public class Inventory : MonoBehaviour
 {
     private const int slots = 4;
 
-    public static List<IInventoryItem> mItems = new List<IInventoryItem>();
+    public static List<String> mItems = new List<String>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
             if (col.enabled)
             {
                 col.enabled = false;
-                mItems.Add(item);
+                mItems.Add(item.Name);
 
                 item.OnPickup();
 
@@ -30,9 +30,12 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(IInventoryItem item)
     {
-        if (mItems.Contains(item))
+        Debug.Log("Removing item");
+        if (mItems.Contains(item.Name))
         {
-            mItems.Remove(item);
+            Debug.Log(item.Name);
+            mItems.Remove(item.Name);
+
             item.OnDrop();
 
             Collider col = (item as MonoBehaviour).GetComponent<Collider>();
