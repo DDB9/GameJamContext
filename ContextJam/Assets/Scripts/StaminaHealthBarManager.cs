@@ -26,12 +26,8 @@ public class StaminaHealthBarManager : MonoBehaviour
 
     public GameObject gameOverScreen;
 
-    public GameObject tutorialSpeechBubbleStarvation;
-
     //a boolean for a simple tutorial prompt in the game
     private bool tutorialStarvation = false;
-
-
 
     public enum playerStates
     {
@@ -40,15 +36,6 @@ public class StaminaHealthBarManager : MonoBehaviour
     }
     playerStates State = playerStates.NORMAL;
     
-
-    
-
-
-    
-    
-
-    
-
     private void Start()
     {
         staminaBar = GameObject.Find("Stamina").GetComponent<RawImage>();
@@ -114,15 +101,6 @@ public class StaminaHealthBarManager : MonoBehaviour
             starvationTimer = 0;
         }
 
-        if (Input.GetKeyDown("p"))
-        {
-            if(tutorialSpeechBubbleStarvation.active == true)
-            {
-                
-                tutorialSpeechBubbleStarvation.SetActive(false);
-            }
-        }
-
         switch (State)
         {
             case playerStates.STARVING:
@@ -132,11 +110,9 @@ public class StaminaHealthBarManager : MonoBehaviour
                     if (!tutorialStarvation)
                     {
                         tutorialStarvation = true;
-                        tutorialSpeechBubbleStarvation.SetActive(true);
                     }
 
                 }
-                
 
                 break;
 
@@ -145,14 +121,8 @@ public class StaminaHealthBarManager : MonoBehaviour
                 {
                     starvationTimer -= Time.deltaTime * starvationReductionModifier;
                 }
-                
 
                 break;
-
         }
-
-
     }   
-
-   
 }
