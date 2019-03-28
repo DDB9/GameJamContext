@@ -18,7 +18,7 @@ public class MenuScript : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Ranchwatch");
+        SceneManager.LoadScene("Farm");
     }
 
     public void Instructions()

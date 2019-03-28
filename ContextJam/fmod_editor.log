@@ -7,13 +7,553 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000085454518 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000006CE14A08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000A330F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD1B6E1100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD1B6E10D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD1B6E11D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD1B6E1290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000006CE97668
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump4', format=2, channels=1, frequency=48000, lengthbytes=2624, lengthpcm=12359, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.229767.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000A330F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD1B6E1100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD1B6E10D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD1B6E11D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD1B6E1290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000006CE97668
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump1', format=2, channels=1, frequency=48000, lengthbytes=3936, lengthpcm=17387, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.274261.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000A330F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD1B6E1100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD1B6E10D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD1B6E11D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD1B6E1290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000006CE97668
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Foot_Dirt1_BareJump3', format=2, channels=1, frequency=48000, lengthbytes=2784, lengthpcm=12066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.276733.
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (000000004C517C38)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000003EA86AD8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (000000006D04BA18)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000627A7AD8 : node = 000000004D1E4C20
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000627A7AD8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004D1E4D38
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_forest', format=2, channels=2, frequency=48000, lengthbytes=767872, lengthpcm=3566265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.339672.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000627A7AD8
+[LOG] SoundI::getSubSound                      : sound 00000000627A7AD8.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000A330F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD1B6E1100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD1B6E10D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD1B6E11D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD1B6E1290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000040CB9738
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='foley_object_grab_pickup_04', format=2, channels=2, frequency=48000, lengthbytes=6592, lengthpcm=26066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944032.
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000225BC4F8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000003EA89ED8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000004C5182F8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000627A7C88 : node = 000000004C87CAE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000627A7C88
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000627A7FE8 : node = 000000004C87CC30
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C87CBF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000627A8348 : node = 000000004C87CD80
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000627A9428 : node = 000000005EBAEF30
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000225BC858 : node = 0000000012B530C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000225BC348 : node = 0000000012B54080
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000225BC4F8 : node = 0000000062BD1FC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 5
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000627A7C88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000627A7FE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C87CD48
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000627A7FE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000627A8348
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C87CE98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000627A8348
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000627A9428
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005EBAF048
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000627A9428
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000225BC858
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000012B531D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000225BC858
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000225BC348
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000012B54198
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000225BC348
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000225BC4F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000062BD20D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000225BC4F8
+[LOG] SoundI::getSubSound                      : sound 00000000627A7C88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000627A7FE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000627A8348.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000627A9428.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000225BC858.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000225BC348.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000225BC4F8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000627A7C88)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062635A98)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (00000000627A8BB8)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000627A8348)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062631178)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (000000006D04B358)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000225BC858)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062632B78)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (00000000A49D4A28)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D3E58 : node = 0000000062BD0580
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D3E58
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000062BD0698
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D3E58
+[LOG] SoundI::getSubSound                      : sound 00000000A49D3E58.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D3AF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D3AF8
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_forest (00000000627A7AD8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_forest (0000000062636938)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_forest (00000000627A7778)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (00000000225BC4F8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (0000000062634F38)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000A49D3AF8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D4A28 : node = 00000000A4D0EEE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D4A28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0EFF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_lake', format=2, channels=2, frequency=48000, lengthbytes=1200480, lengthpcm=5206894, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.403067.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D4A28
+[LOG] SoundI::getSubSound                      : sound 00000000A49D4A28.  Subsound index 0 / 1
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000A49D3E58)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062630FD8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000A49D4BD8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D4518 : node = 00000000A4D0DF20
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D4518
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0E038
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Forest_Day', format=2, channels=2, frequency=48000, lengthbytes=664992, lengthpcm=2461440, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.014465.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D4518
+[LOG] SoundI::getSubSound                      : sound 00000000A49D4518.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D4368 : node = 00000000A4D0E9A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D4368
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D3AF8 : node = 00000000A4D0D350
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0EAB8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D35E8 : node = 00000000A4D0E1C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D3E58 : node = 00000000A4D0E850
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D41B8 : node = 00000000A4D0D5F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D46C8 : node = 00000000A4D0D740
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000A49D4BD8 : node = 00000000A4D0D890
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003EA89CE8.  list count = 5
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D4368
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D3AF8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0D468
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D3AF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D35E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0E2D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D35E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D3E58
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0E968
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D3E58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D41B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0D708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_menu', format=2, channels=2, frequency=48000, lengthbytes=514304, lengthpcm=2353626, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301499.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D41B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D46C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0D858
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D46C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D4BD8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4D0D9A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D4BD8
+[LOG] SoundI::getSubSound                      : sound 00000000A49D4368.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D3AF8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D35E8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D3E58.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D41B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D46C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000A49D4BD8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000225BC858 : node = 00000000AD8290D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000225BC858
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000AD8291E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TheBarnOST2_FIN3_farm', format=2, channels=2, frequency=48000, lengthbytes=1175872, lengthpcm=5420889, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.316414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000225BC858
+[LOG] SoundI::getSubSound                      : sound 00000000225BC858.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Forest_Day (00000000225BCF18)
+[LOG] SoundI::release                          :     Forest_Day (000000003EA8A078)
+[LOG] SoundI::release                          :     Forest_Day (000000006D04B868)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000A49D4368)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062634098)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (00000000A49D4008)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000A49D35E8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062632838)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (00000000627A7C88)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_menu (00000000A49D41B8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (0000000062633878)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_menu (00000000627A7778)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_lake (00000000A49D4A28)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_lake (0000000062636458)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_lake (00000000A49D4F38)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D35E8 : node = 00000000AD828F80
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D35E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000AD829098
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D35E8
+[LOG] SoundI::getSubSound                      : sound 00000000A49D35E8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (00000000A49D4BD8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000626358F8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000225BC4F8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SystemI::createSound                     : filename = Assets\fmodbuilds\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A49D41B8 : node = 00000000AD8294C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003EA89CE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A49D41B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\fmodbuilds\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5250304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 78240
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000AD8295D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sm-fire-firewood-small-03-DPAmono', format=2, channels=1, frequency=48000, lengthbytes=135232, lengthpcm=864431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.092831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A49D41B8
+[LOG] SoundI::getSubSound                      : sound 00000000A49D41B8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (00000000A49D35E8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (0000000062631B38)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000A49D4368)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] SoundI::release                          : Forest_Day (00000000A49D4518)
+[LOG] SoundI::release                          :     Forest_Day (0000000062631998)
+[LOG] SoundI::release                          :     Forest_Day (00000000A49D3288)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000A49D46C8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062634718)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000627A7AD8)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000A49D3E58)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062633538)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000627A8348)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000A49D3AF8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062634F38)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000627A8BB8)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000225BCD68)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000003EA891D8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000006D04BF28)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000225BC348)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062634578)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000A49D3948)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000225BC6A8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000003EA89858)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000004C5173C8)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000627A9428)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062637498)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000006D04BA18)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000225BC858)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062634BF8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (000000006D04B358)
+[LOG] SoundI::release                          : TheBarnOST2_FIN3_farm (00000000627A7FE8)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (0000000062636118)
+[LOG] SoundI::release                          :     TheBarnOST2_FIN3_farm (00000000225BCA08)
+[LOG] SoundI::release                          : sm-fire-firewood-small-03-DPAmono (00000000A49D41B8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000626358F8)
+[LOG] SoundI::release                          :     sm-fire-firewood-small-03-DPAmono (00000000A49D4A28)
+[LOG] SoundI::release                          :  (000000006CF0D1C8)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump1 (0000000062633398)
+[LOG] SoundI::release                          :  (000000004D07E348)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump3 (0000000062633058)
+[LOG] SoundI::release                          :  (000000006CF10CB8)
+[LOG] SoundI::release                          :     Foot_Dirt1_BareJump4 (0000000062632EB8)
+[LOG] SoundI::release                          :  (00000000A4B31048)
+[LOG] SoundI::release                          :     foley_object_grab_pickup_04 (0000000062637158)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
@@ -22,3 +562,12 @@
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
+[LOG] SystemI::close                           : Closed.
