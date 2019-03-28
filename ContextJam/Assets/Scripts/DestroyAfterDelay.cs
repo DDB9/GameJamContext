@@ -31,8 +31,8 @@ public class DestroyAfterDelay : MonoBehaviour
                 {
                     if (!phase3.activeInHierarchy)
                     {
-                        fakeFood.SetActive(true);
-                        allHarvest.SetActive(true);
+                        fakeFood.SetActive(false);
+                        allHarvest.SetActive(false);
                     }
                 }
             }
