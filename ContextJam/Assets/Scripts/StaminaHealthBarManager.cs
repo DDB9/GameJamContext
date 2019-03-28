@@ -29,6 +29,10 @@ public class StaminaHealthBarManager : MonoBehaviour
     //a boolean for a simple tutorial prompt in the game
     private bool tutorialStarvation = false;
 
+
+    public float highscoreTimer = 0;
+    public Text highscore;
+
     public enum playerStates
     {
         NORMAL,
@@ -51,8 +55,16 @@ public class StaminaHealthBarManager : MonoBehaviour
         hungerBar.transform.localScale = new Vector3(hunger / 100, hungerBar.transform.localScale.y, hungerBar.transform.localScale.z);
         starvationBar.transform.localScale = new Vector3(starvationTimer / 50, starvationBar.transform.localScale.y, starvationBar.transform.localScale.z);
 
-       
-        if(hunger > 25)
+
+        if (!gameOverScreen.activeInHierarchy)
+        {
+            highscoreTimer += Time.deltaTime;
+        }
+        
+        highscore.text = highscoreTimer.ToString("F2");
+
+
+        if (hunger > 25)
         {
             
             staminaHungerRelation = 100 / hunger;

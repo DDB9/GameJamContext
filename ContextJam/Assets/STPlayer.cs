@@ -42,7 +42,7 @@ public class STPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fullvolume.setValue(0.7f);
+        fullvolume.setValue(1);
         currentscene.setValue(1);
 
         scene = SceneManager.GetActiveScene();
